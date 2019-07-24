@@ -154,7 +154,7 @@ class API
                 $result->execute([$this->path[1]]);
                 break;
             case 'ultimos_acessos_externos':
-                $select = "SELECT * FROM tb_acesso_externo WHERE cpf = ? limit 100;";
+                $select = "SELECT * FROM tb_acesso_externo tae LEFT JOIN tb_geo_ip tgi ON tae.remote_address = tgi.remote_address WHERE cpf = ? limit 100;";
                 $result = $this->bd->prepare($select);
                 $result->execute([$this->path[1]]);
                 break;

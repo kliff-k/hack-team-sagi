@@ -22,11 +22,12 @@
         <link rel="stylesheet" href="./css/s2.css">
         <link rel="stylesheet" href="./css/base-cachekey-5518dbd75b60103b24fe944c82b18e07.css">
         <link rel="stylesheet" href="./css/reset-cachekey-05f19b4e1825b7332a35448aee289ac6.css">
-        <!-- <link rel="stylesheet" href="./css/base.css"> -->
         <link rel="stylesheet" href="./css/brasilgovagenda-b80d378.css">
         
         <link rel="stylesheet" href="./css/brasilgovportal-f357bf7.css">
-        <link rel="stylesheet" href="./css/brasilgovtiles-fadba58.css">        
+        <link rel="stylesheet" href="./css/brasilgovtiles-fadba58.css">
+        <link rel="stylesheet" href="./css/estilos.css">        
+        <link rel="stylesheet" href="./lib/fontawesome-free-5.9.0-web/css/all.min.css">        
         <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
@@ -42,7 +43,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">  
         
         <meta name="msapplication-config" content="./css/browserconfig.xml" />
-        <meta name="theme-color" content="#00a300" />
+        <meta name="theme-color" content="#333" />
 
         <link href="./css/brasilgovtemas-7dd46b8.css" rel="stylesheet" />  
         
@@ -93,11 +94,12 @@
         <!-- Header -->
         <header id="main-header" class="inverter">
             <div class="header-wrapper">
+                    <img src="./img/background4.jpg" width="1150" height="543" class="left img_fundo" alt="">
                 <div id="logo">
                     <a id="portal-logo" title="O Portal Padrão do governo Federal. " href="index.html">
     
-                        <div id="portal-title" class="corto">Gov.br Informações da Conta</div>
-                        <span id="portal-description">51Gi! T5A3 Hackathon SERPRO</span>
+                        <div id="portal-title" class="corto">HACKATHON - 51Gi! T5A3</div>
+                        <span id="portal-description">Gov.br Informações da Conta</span>
                     </a>
                 </div>
     
@@ -162,6 +164,13 @@
     
                 </div>
             </div>
+
+
+
+
+
+
+
             <!-- Main Menu -->
             <div class="navigation-wrapper">
     
@@ -470,8 +479,7 @@
         <div id="portal-breadcrumbs" class="inverter">
             <span id="breadcrumbs-you-are-here">Você está aqui:</span>
             <span id="breadcrumbs-home">
-            <a href="http://www.portalpadrao.gov.br">Página Inicial</a>
-    
+            <a href="http://www.portalpadrao.gov.br">Página Inicial</a>    
         </span>
     
         </div>
@@ -483,46 +491,114 @@
     
                 <main id="main-content" role="main">
     
-                    <div id="viewlet-above-content">
-    
-                        <div id="viewlet-tileshare" data-title-fb="Compartilhar no Facebook (abre em nova janela)" data-title-twitter="Tweet (abre em nova janela)" data-title-linkedin="Compartilhar no Linkedin  (abre em nova janela)" data-title-gplus="Compartilhar no Google+  (abre em nova janela)" data-title-link="Copiar para área de transferência" data-title-more="Mais opções">
-                        </div>
-                    </div>
+                    
     
                     <div class="">
     
-                        <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
-                            <dt>Info</dt>
-                            <dd></dd>
-                        </dl>
+                        
+
+
+
+
+
+
+
+
+
+
     
                         <div id="content">
     
-                            <div class="row linha-destaquetopo">
-    
-                                <div class="column col-md-12 " data-panel="">
-    
-                                    <div class="tile tile-default" id="c6b80986-42af-4472-98fb-6b4ca1e610a5">
-    
-                                        <div class="nitf-basic-tile tile-content">
-    
-                                            <a class="imag" href="http://www.portalpadrao.gov.br/noticias/governo-lanca-a-nova-identidade-padrao-de-comunicacao-digital">
-                                                <img src="./img/0ef2ced8-de51-4b0b-a2ed-38f6a822070e.jpeg" width="1150" height="543" class="left" alt="Governo lança a nova Identidade Padrão de Comunicação Digital">
-                                            </a>
-    
-                                            <h1><a href="http://www.portalpadrao.gov.br/noticias/governo-lanca-a-nova-identidade-padrao-de-comunicacao-digital">Governo lança a nova Identidade Padrão de Comunicação Digital</a></h1>
-    
-                                            <div class="visualClear">
-                                                
+                            <div class="row">
+                                <div class="col-md-12" style="local-usuario"> 
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div  style="text-align: center !important; width: 100%">
+                                                <i class="fa fa-user-circle fa-5x" style="color: #333"></i>
                                             </div>
-    
-                                        </div>
-    
-                                    </div>
-    
+                                        </div>  
+                                        <div class="col-md-12">
+                                            <div  style="text-align: center !important; width: 100%">
+                                                <span class="lblNomeDoUsuarioTitulo">Bem vindo, <span id="lblNomeDoUsuario">Nome Usuário X</span></span>
+                                            </div>
+                                        </div>  
+                                        <div class="lblInfoInicialUsuario col-md-12">
+                                                <div  style="text-align: center !important; width: 100%">
+                                                    Nesse espaço você pode gerenciar informações aoo acesso na sua conta do Gov.br
+                                                </div>
+                                        </div>  
+                                    </div>                                 
                                 </div>
-    
                             </div>
+
+                            <div class="row" style="justify-content: center">
+                                <div class="col-md-4" style="">
+                                        <div class="card" style="">
+                                            <div class="card-body">
+                                                    <h5 class="card-title">VERIFICAÇÃO DE ACESSO</h5>
+                                                    <img src="./img/undraw_personal_settings_kihd.png" class="card-icon">
+                                                
+                                                <h6 class="card-subtitle mb-2">Veja as últimas atividades de acesso da sua conta:</h6>
+                                                <p class="card-text text-muted">
+                                                    20/12/2012, Brasília, Firefox
+                                                    <br>
+                                                    18/12/2012, Ceará, Opera
+                                                    <br>
+                                                    17/12/2012, Ceará, Chrome
+
+                                                </p>
+                                                <a href="#" class="card-link">Ver mais</a>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-4" style="">
+                                        <div class="card" style="">
+                                            <div class="card-body">
+                                                    <h5 class="card-title">ACESSOS SUSPEITOS</h5>
+                                                    <div style="display: flex; justify-content: center">
+                                                        <img src="./img/undraw_secure_server_s9u8.svg" class="card-icon">
+                                                    </div>
+                                                <h6 class="card-subtitle mb-2">O Gov.br identificou acessos suspeitos em sua conta.:</h6>
+                                                <p class="card-text text-muted">
+                                                    20/12/2012, Brasília, Firefox
+                                                    <br>
+                                                    18/12/2012, Ceará, Opera
+                                                    <br>
+                                                    17/12/2012, Ceará, Chrome
+
+                                                </p>
+                                                <a href="#" class="card-link">Acesse as atividades</a>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-4" style="">
+                                        <div class="card" style="">
+                                            <div class="card-body">
+                                                    <h5 class="card-title">PROTEJA SUA CONTA</h5>
+                                                    <div style="display: flex; justify-content: center">
+                                                        <img src="./img/undraw_Security_on_ff2u.svg"  class="card-icon">
+                                                    </div>
+                                                <h6 class="card-subtitle mb-2">O Gov.br identificou acessos suspeitos em sua conta.:</h6>
+                                                <p class="card-text text-muted">
+                                                    20/12/2012, Brasília, Firefox
+                                                    <br>
+                                                    18/12/2012, Ceará, Opera
+                                                    <br>
+                                                    17/12/2012, Ceará, Chrome
+
+                                                </p>
+                                                <a href="#" class="card-link">Acesse as atividades</a>
+                                            </div>
+                                        </div>
+                                </div>
+
+
+                            </div>
+                            
+
+
     
                             <div class="row">
     

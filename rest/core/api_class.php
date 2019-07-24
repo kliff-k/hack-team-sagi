@@ -121,7 +121,7 @@ class API
         $this->key      = explode(':',$this->token)[0];
         $this->sig      = explode(':',$this->token)[1];
         $this->source   = explode('/',$_SERVER['REQUEST_URI'])[3];
-        $this->path     = array_slice(explode('/',explode('?',$_SERVER['REQUEST_URI'])[0]),4);
+        $this->path     = array_slice(explode('/',explode('?',$_SERVER['REQUEST_URI'])[0]),3);
         $this->endpoint = '/'.implode('/',$this->path);
 
         // Inclui a classe Banco.
@@ -146,6 +146,7 @@ class API
      */
     private function execSource ()
     {
+	    var_dump($this->path);
         switch ($this->path[0])
         {
             case 'ultimos_acessos_internos':

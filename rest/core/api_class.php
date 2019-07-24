@@ -146,7 +146,6 @@ class API
      */
     private function execSource ()
     {
-	    var_dump($this->path);
         switch ($this->path[0])
         {
             case 'ultimos_acessos_internos':

@@ -146,17 +146,29 @@ class API
      */
     private function execSource ()
     {
-
-        //ultimos acessos externos
-        //ultimos acessos gov.br
         switch ($this->path[0])
         {
-            case 'acessos_internos':
-                $result = $this->bd->prepare('SELECT * FROM tb_acesso_gov_br WHERE cpf = ?;');
+            case 'ultimos_acessos_internos':
+                $select = "SELECT * FROM tb_acesso_gov_br WHERE cpf = ? limit 100;";
+                $result = $this->bd->prepare($select);
                 $result->execute([$this->path[1]]);
                 break;
-            case 'acessos_externos':
-                $result = $this->bd->prepare('SELECT * FROM tb_acesso_externo WHERE cpf = ?;');
+            case 'ultimos_acessos_externos':
+                $select = "SELECT * FROM tb_acesso_externo WHERE cpf = ? limit 100;";
+                $result = $this->bd->prepare($select);
+                $result->execute([$this->path[1]]);
+                break;
+            case 'notificacoes':
+                $select = "SELECT a.id_notificacao, a.id_acesso_suspeito, a.ds_notificacao, a.dt_notificacao, e.cpf, e.nm_usuario
+                FROM public.tb_notificacao a
+                inner join public.tb_acessos_suspeitos b on b.id_acesso_suspeito = a.id_acesso_suspeito
+                inner join public.tb_acesso_gov_br c on c.id_acesso_suspeito = b.id_acesso_suspeito
+                inner join public.tb_acesso_externo d on d.id_acesso_suspeito = b.id_acesso_suspeito
+                inner join public.tb_usuario e on e.cpf = c.cpf or e.cpf = d.cpf
+                where e.cpf = ?
+                order by id_notificacao desc LIMIT 10;";
+
+                $result = $this->bd->prepare($select);
                 $result->execute([$this->path[1]]);
                 break;
         }

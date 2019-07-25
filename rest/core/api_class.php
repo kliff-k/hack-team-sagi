@@ -224,7 +224,7 @@ class API
                             from tb_acesso_gov_br a 
                             left join tb_acessos_suspeitos s on (a.cpf=s.cpf and a.data_evento=s.data_evento)
                             left join tb_notificacao n on (s.id_notificacao=n.id_notificacao)
-                            WHERE a.cpf = ? ORDER BY s.data_evento DESC LIMIT 10;";
+                            WHERE a.cpf = ? ORDER BY s.data_evento DESC LIMIT 100;";
 
                         $result = $this->bd->prepare($select);
                         $result->execute([$this->path[1]]);

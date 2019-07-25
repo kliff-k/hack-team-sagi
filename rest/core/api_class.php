@@ -148,6 +148,14 @@ class API
     {
         switch ($this->path[0])
         {
+            case 'login_usuario':
+                $select = "SELECT * FROM tb_usuario WHERE cpf = ? AND senha = ?;";
+                $result = $this->bd->prepare($select);
+                $cpf = $this->data['cpf'];
+                $senha = $this->data['senha'];
+                $result->execute([$cpf,$senha]);
+                break;
+
             case 'dados_usuario':
                 $select = "SELECT * FROM tb_usuario WHERE cpf = ?;";
                 $result = $this->bd->prepare($select);

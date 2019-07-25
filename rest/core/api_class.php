@@ -146,49 +146,93 @@ class API
      */
     private function execSource ()
     {
+        // Endpoints
         switch ($this->path[0])
         {
             case 'login_usuario':
-                $select = "SELECT * FROM tb_usuario WHERE cpf = ? AND senha = ?;";
-                $result = $this->bd->prepare($select);
-                $cpf = $this->data['cpf'];
-                $senha = $this->data['senha'];
-                $result->execute([$cpf,$senha]);
+                switch ($this->method)
+                {
+                    case 'POST':
+                        if(!$this->data['cpf'] || !$this->data['senha'])
+                            $this->endExec(400,['Dados incompletos']);
+
+                        $select = "SELECT * FROM tb_usuario WHERE cpf = ? AND senha = ?;";
+                        $result = $this->bd->prepare($select);
+                        $cpf = $this->data['cpf'];
+                        $senha = $this->data['senha'];
+                        $result->execute([$cpf,$senha]);
+                        break;
+                }
                 break;
 
             case 'dados_usuario':
-                $select = "SELECT * FROM tb_usuario WHERE cpf = ?;";
-                $result = $this->bd->prepare($select);
-                $result->execute([$this->path[1]]);
+                switch ($this->method)
+                {
+                    case 'GET':
+                        if(!$this->path[1])
+                            $this->endExec(400,['CPF não informado']);
+
+                        $select = "SELECT * FROM tb_usuario WHERE cpf = ?;";
+                        $result = $this->bd->prepare($select);
+                        $result->execute([$this->path[1]]);
+                        break;
+                }
                 break;
 
             case 'ultimos_acessos_internos':
-                $select = "SELECT * FROM tb_acesso_gov_br WHERE cpf = ? ORDER BY data_evento DESC LIMIT 100;";
-                $result = $this->bd->prepare($select);
-                $result->execute([$this->path[1]]);
+                switch ($this->method)
+                {
+                    case 'GET':
+                        if(!$this->path[1])
+                            $this->endExec(400,['CPF não informado']);
+
+                        $select = "SELECT * FROM tb_acesso_gov_br WHERE cpf = ? ORDER BY data_evento DESC LIMIT 100;";
+                        $result = $this->bd->prepare($select);
+                        $result->execute([$this->path[1]]);
+                        break;
+                }
                 break;
 
             case 'ultimos_acessos_externos':
-                $select = "SELECT * FROM tb_acesso_externo tae LEFT JOIN tb_geo_ip tgi ON tae.remote_address = tgi.remote_address WHERE cpf = ? ORDER BY data_evento DESC LIMIT 100;";
-                $result = $this->bd->prepare($select);
-                $result->execute([$this->path[1]]);
+                switch ($this->method)
+                {
+                    case 'GET':
+                        if(!$this->path[1])
+                            $this->endExec(400,['CPF não informado']);
+
+                        $select = "SELECT * FROM tb_acesso_externo tae LEFT JOIN tb_geo_ip tgi ON tae.remote_address = tgi.remote_address WHERE cpf = ? ORDER BY data_evento DESC LIMIT 100;";
+                        $result = $this->bd->prepare($select);
+                        $result->execute([$this->path[1]]);
+                        break;
+                }
                 break;
 
             case 'notificacoes':
-                $select = "SELECT a.id_notificacao, a.id_acesso_suspeito, a.ds_notificacao, a.dt_notificacao, e.cpf, e.nm_usuario, f.sigla_uf,f.nome_municipio_sem_acento
-                    FROM public.tb_notificacao a
-                    inner join public.tb_acessos_suspeitos b on b.id_acesso_suspeito = a.id_acesso_suspeito
-                    left join public.tb_acesso_gov_br c on c.id_acesso_suspeito = b.id_acesso_suspeito
-                    left join public.tb_acesso_externo d on d.id_acesso_suspeito = b.id_acesso_suspeito
-                    inner join public.tb_usuario e on e.cpf = c.cpf or e.cpf = d.cpf
-                    left join public.tb_geo_ip f on f.remote_address = d.remote_address
-                    where e.cpf = ?
-                    order by id_notificacao DESC LIMIT 10;";
+                switch ($this->method)
+                {
+                    case 'GET':
+                        if(!$this->path[1])
+                            $this->endExec(400,['CPF não informado']);
 
-                $result = $this->bd->prepare($select);
-                $result->execute([$this->path[1]]);
+                        $select = "SELECT a.id_notificacao, a.id_acesso_suspeito, a.ds_notificacao, a.dt_notificacao, e.cpf, e.nm_usuario, f.sigla_uf,f.nome_municipio_sem_acento
+                            FROM public.tb_notificacao a
+                            inner join public.tb_acessos_suspeitos b on b.id_acesso_suspeito = a.id_acesso_suspeito
+                            left join public.tb_acesso_gov_br c on c.id_acesso_suspeito = b.id_acesso_suspeito
+                            left join public.tb_acesso_externo d on d.id_acesso_suspeito = b.id_acesso_suspeito
+                            inner join public.tb_usuario e on e.cpf = c.cpf or e.cpf = d.cpf
+                            left join public.tb_geo_ip f on f.remote_address = d.remote_address
+                            where e.cpf = ?
+                            order by id_notificacao DESC LIMIT 10;";
+
+                        $result = $this->bd->prepare($select);
+                        $result->execute([$this->path[1]]);
+                        break;
+                }
                 break;
         }
+
+        if(!$result)
+            $this->endExec(400,['Método inadequado']);
 
         $return = array();
         while ($row = $result->fetch(PDO::FETCH_ASSOC))

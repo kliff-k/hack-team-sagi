@@ -143,7 +143,88 @@
 
             <!--DADOS CADASTRAIS-->
             <div class="tab-pane fade" id="tab-dados-cadastrais" role="tabpanel">
-                Dados Cadastrais
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-6 p-1">
+                            <div class="card h-100">
+                                <div class="card-header text-center">
+                                    <h5>Dados Pessoais</h5>
+                                </div>
+                                <form id="form-dados-pessoais" action="" novalidate>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="dados-pessoais-cpf">CPF</label>
+                                            <input type="text" readonly id="dados-pessoais-cpf" class="form-control-plaintext font-weight-bold" value="000.000.000-00">
+                                        </div>
+                                        <div class="form-group d-flex">
+                                            <div class="justify-item-start">
+                                                <label for="dados-pessoais-cpf">Foto de Usuário</label>
+                                                <small class="form-text text-muted">Clique na sua foto para alterá-la</small>
+                                            </div>
+                                            <div class="justify-item-end">
+                                                <img src="./img/undraw_secure_server_s9u8.svg" class="ml-2 w-100 h-100" alt="Foto do Usuário">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="dados-pessoais-nome">Nome Completo</label>
+                                            <input type="text" id="dados-pessoais-nome" class="form-control" placeholder="Digite seu nome completo">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="dados-pessoais-email">E-mail&nbsp;<i class="fas fa-check-circle text-success"></i></label>
+                                            <div class="input-group">
+                                                <input type="email" id="dados-pessoais-email" class="form-control" placeholder="Digite seu e-mail">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button">Validar</button>
+                                                </div>
+                                            </div>
+                                            <small class="form-text text-muted">ex: fulano@email.com</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="dados-pessoais-celular">Telefone Celular</label>
+                                            <div class="input-group">
+                                                <input type="tel" id="dados-pessoais-celular" class="form-control" placeholder="Digite o número do seu celular">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button">Validar</button>
+                                                </div>
+                                            </div>
+                                            <small class="form-text text-muted">ex: (XX) X XXXX-XXXX</small>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <button type="submit" class="btn btn-outline-primary">Alterar Dados</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-1">
+                            <div class="card h-100">
+                                <div class="card-header text-center">
+                                    <h5>Senha de Acesso</h5>
+                                </div>
+                                <form id="form-alterar-senha" action="" novalidate>
+                                    <div class="card-body">
+                                        <input type="hidden" id="alterar-senha-cpf" value="000.000.000-00">
+                                        <div class="form-group">
+                                            <label for="alterar-senha-atual">Senha Atual</label>
+                                            <input type="password" id="alterar-senha-atual" class="form-control" placeholder="Digite sua senha atual">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="alterar-senha-nova">Nova Senha</label>
+                                            <input type="password" id="alterar-senha-nova" class="form-control" placeholder="Digite sua nova senha">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="alterar-senha-confirmacao">Confirme a Nova Senha</label>
+                                            <input type="password" id="alterar-senha-confirmacao" class="form-control" placeholder="Confirme sua nova senha">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <button type="submit" class="btn btn-outline-primary">Alterar Senha</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!--SEGURANÇA CONTA-->

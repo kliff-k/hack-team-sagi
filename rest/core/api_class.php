@@ -148,6 +148,12 @@ class API
     {
         switch ($this->path[0])
         {
+            case 'dados_usuario':
+                $select = "SELECT * FROM tb_usuario WHERE cpf = ?;";
+                $result = $this->bd->prepare($select);
+                $result->execute([$this->path[1]]);
+                break;
+
             case 'ultimos_acessos_internos':
                 $select = "SELECT * FROM tb_acesso_gov_br WHERE cpf = ? ORDER BY data_evento DESC LIMIT 100;";
                 $result = $this->bd->prepare($select);

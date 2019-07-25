@@ -95,3 +95,109 @@
 .card-icon{
     height: 180px;
 }
+
+
+.text-warning{
+    color: #eb5e45;
+}
+
+.text-primary{
+    color: #0094ff;
+}
+
+.local-atividades{
+    margin-top: 0.9em !important;
+}
+
+.local-atividades span{
+    width: 100%;
+    display: table;
+    font-size: 0.9em;
+}
+
+.atividade0{
+    font-weight: bold;
+}
+
+/* CSS used here will be applied after bootstrap.css */
+.badge-notify{
+background:red;
+position:relative;
+top: -20px;
+left: -23px;
+max-height: 12px;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #0094ff;
+    border-radius: 10px;
+}
+
+.btn-notificacao{
+    color: #5f6368;
+}
+.lc-item-notificacao{
+    padding-top: 60px;
+    cursor: pointer;
+}
+
+#lblNomeDoUsuario{
+    font-weight: 600;
+}
+
+.texto-mensagens{
+position:relative;
+top: -8px;
+left: -23px;   
+font-size: 0.9em;
+}
+
+.list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    max-width: 450px;
+    list-style-type: disc;
+}
+
+
+.list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    text-align: left;
+}
+
+.list-group:last-child{
+    margin-bottom: 0;
+}
+
+#dvItemsNotificacao{
+    width: 320px;
+    text-align: left;
+}
+

@@ -1,6 +1,18 @@
 body{
 }
 
+header{
+    background-image: url('../img/bg-hackathon.jpg');
+    background-position: center 55%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: black !important;
+}
+
+.navbar-brand{
+    height: 2em;
+}
+
 .card-icon{
     height: 10em;
     padding: 1em;

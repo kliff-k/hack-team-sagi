@@ -124,7 +124,7 @@ class API
         $this->path     = array_slice(explode('/',explode('?',$_SERVER['REQUEST_URI'])[0]),3);
         $this->endpoint = '/'.implode('/',$this->path);
 
-        // Inclui a classe Banco.
+        // Inicializa a conexão com o banco Postgres (HACK!)
         $this->bd = new PDO('pgsql:host=35.199.126.20 port=5432 dbname=hackathon user=hackathon password=Sagi@Mds');
 
         // Executa a chamada à fonte requisitada.
@@ -161,6 +161,12 @@ class API
                         $cpf = $this->data['cpf'];
                         $senha = $this->data['senha'];
                         $result->execute([$cpf,$senha]);
+
+                        if($result->fetch(PDO::FETCH_ASSOC))
+                            $this->endExec(200,[true]);
+                        else
+                            $this->endExec(200,[false]);
+
                         break;
                 }
                 break;

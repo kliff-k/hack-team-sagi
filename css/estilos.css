@@ -35,3 +35,15 @@ header{
 #barra-brasil{
     width: 100%;
 }
+
+
+.local-atividades div{
+    width: 100%;    
+    font-size: 0.9em !important;
+}
+
+.dvtabs h5{
+    text-transform: uppercase;
+    
+    font-size: 1.4em;
+}

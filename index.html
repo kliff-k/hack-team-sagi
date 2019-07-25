@@ -13,6 +13,26 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./img/ms-icon-144x144.png">
 
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> 
+
+    <meta name="msapplication-config" content="./css/browserconfig.xml" />
+    <meta name="theme-color" content="#333" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="manifest" href="./manifest.json"/>
+
+
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -65,11 +85,11 @@
 <div class="row m-0">
     <div class="col-md-3 pl-0">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-            <a class="nav-link active" data-toggle="tab" href="#tab-inicio" role="tab">Início</a>
-            <a class="nav-link" data-toggle="tab" href="#tab-dados-cadastrais" role="tab">Dados Cadastrais</a>
-            <a class="nav-link" data-toggle="tab" href="#tab-seguranca" role="tab">Segurança da conta</a>
-            <a class="nav-link" data-toggle="tab" href="#tab-selos" role="tab">Selos de confiabilidade</a>
-            <a class="nav-link" data-toggle="tab" href="#tab-autorizacoes" role="tab">Autorizações</a>
+            <a class="nav-link active" data-toggle="tab" href="#tab-inicio" role="tab"  id="btn-inicio">Início</a>
+            <a class="nav-link" data-toggle="tab" href="#tab-dados-cadastrais" role="tab"  id="btn-dados-cadastrais">Dados Cadastrais</a>
+            <a class="nav-link" data-toggle="tab" href="#tab-seguranca" role="tab" id="btn-seguranca">Segurança da conta</a>
+            <a class="nav-link" data-toggle="tab" href="#tab-selos" role="tab"  id="btn-selos">Selos de confiabilidade</a>
+            <a class="nav-link" data-toggle="tab" href="#tab-autorizacoes" role="tab" id="btn-autorizacoes">Autorizações</a>
         </div>
     </div>
     <div class="col">
@@ -79,7 +99,7 @@
                 <div id="boas-vindas" class="my-3">
                     <div class="text-center">
                         <i class="fa fa-user-circle fa-5x m-1" style="color: #333"></i>
-                        <h4 class="mb-3">Bem vindo, <span>Nome Usuário X</span></h4>
+                        <h4 class="mb-3">Bem vindo, <span id="lblNomeDoUsuario">Nome Usuário X</span></h4>
                         <h6 id="nome-usuario" class="text-muted">Nesse espaço você pode gerenciar informações aoo acesso na sua conta do Gov.br</h6>
                     </div>
                 </div>
@@ -88,41 +108,39 @@
                         <div class="col-md-6 col-xl-4 p-1">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">VERIFICAÇÃO DE ACESSO</h5>
-                                    <div class="card-icon">
-                                        <img src="./img/undraw_personal_settings_kihd.png">
-                                    </div>
-                                    <h6 class="text-muted mb-2">Veja as últimas atividades de acesso da sua conta:</h6>
-                                    <div id="local-atividades">
-                                        <div class="font-weight-bold"><i class="fas fa-check-circle text-primary"></i>&nbsp;05/04/2019 09:13:50, Derrubadas-RS</div>
-                                        <div><i class="fas fa-check-circle text-primary"></i>&nbsp;05/04/2019 09:12:40, São Francisco-SE</div>
-                                        <div><i class="fas fa-check-circle text-primary"></i>&nbsp;05/04/2019 09:12:24, Derrubadas-RS</div>
-                                    </div>
-                                    <div class="d-flex justify-content-center pt-3">
-                                        <button class="btn btn-outline-primary">VEJA MAIS DETALHES</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-4 p-1">
-                            <div class="card h-100">
-                                <div class="card-body">
                                     <h5 class="card-title text-center">ACESSOS SUSPEITOS</h5>
                                     <div class="card-icon">
                                         <img src="./img/undraw_secure_server_s9u8.svg">
                                     </div>
                                     <h6 class="text-muted mb-2">O Gov.br identificou acessos suspeitos em sua conta:</h6>
-                                    <div id="local-atividades-suspeitas">
-                                        <div class="font-weight-bold"><i class="fas fa-exclamation-triangle text-danger"></i>&nbsp;05/04/2019 09:13:50, Derrubadas-RS</div>
-                                        <div><i class="fas fa-exclamation-triangle text-danger"></i>&nbsp;05/04/2019 09:12:40, São Francisco-SE</div>
-                                        <div><i class="fas fa-exclamation-triangle text-danger"></i>&nbsp;05/04/2019 09:12:24, Derrubadas-RS</div>
+                                    <div id="local-atividades-suspeitas"  class="local-atividades">
+                                        
                                     </div>
                                     <div class="d-flex justify-content-center pt-3">
-                                        <button class="btn btn-outline-primary">VEJA AS ATIVIDADES</button>
+                                        <button class="btn btn-outline-primary"  onclick="goTabItem('btn-seguranca','dvacessos_suspeitos')">VEJA AS ATIVIDADES</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-6 col-xl-4 p-1">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">VERIFICAÇÃO DE ACESSO</h5>
+                                    <div class="card-icon">
+                                        <img src="./img/undraw_personal_settings_kihd.png">
+                                    </div>
+                                    <h6 class="text-muted mb-2">Veja as últimas atividades de acesso da sua conta:</h6>
+                                    <div id="local-atividades" class="local-atividades">
+                                        
+                                    </div>
+                                    <div class="d-flex justify-content-center pt-3">
+                                        <button class="btn btn-outline-primary" onclick="goTabItem('btn-seguranca','dvacessos')">VEJA MAIS DETALHES</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="col-md-6 col-xl-4 p-1">
                             <div class="card h-100">
                                 <div class="card-body">
@@ -132,7 +150,7 @@
                                     </div>
                                     <h6 class="card-subtitle text-muted mb-2">Você pode aumentar a segurança do acesso da sua conta ativando a autenticação em 2 fatores</h6>
                                     <div class="d-flex justify-content-center pt-3">
-                                        <button class="btn btn-outline-primary">SAIBA MAIS</button>
+                                        <button class="btn btn-outline-primary" onclick="goTabItem('btn-seguranca','dvautenticacao2_etapas')">SAIBA MAIS</button>
                                     </div>
                                 </div>
                             </div>
@@ -227,9 +245,184 @@
                 </div>
             </div>
 
-            <!--SEGURANÇA CONTA-->
+            <!--SEGURANÇA CONTA-->            
             <div class="tab-pane fade" id="tab-seguranca" role="tabpanel">
-                Segurança
+
+                <!--ACESSOS DA CONTA-->
+                <div class="row dvtabs" id="dvacessos">
+                    <div class="col-md-12">
+                        <div class="card">                            
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                            <img src="./img/undraw_personal_settings_kihd.svg" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-10">
+                                            <h5 class="card-title">ÚLTIMOS ACESSOS</h5>
+                                            <span class="text-muted small">Nessa sessão você encontra os acessos efetuados na sua conta. 
+                                                Caso não tenha sido você utilize o botão "Não fui eu", 
+                                                para inabilitar imediatamente o acesso do dispositivo selecionado.</span>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Data/Hora</th>
+                                                        <th>Local</th>
+                                                        <th>Dispositivo</th>
+                                                        <th>IP</th>
+                                                        <th>Serviço</th>
+                                                        <th>Ação</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tblAcessosUsuario">
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <!--ACESSOS DA CONTA-->
+
+                <!--ACESSOS DA CONTA-->
+                <div class="row dvtabs pt-4" id="dvacessos_suspeitos">
+                        <div class="col-md-12">
+                            <div class="card">                            
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                                <img src="./img/undraw_secure_server_s9u8.svg" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-10">
+                                                <h5 class="card-title">ATIVIDADES SUSPEITAS</h5>
+                                                <span class="text-muted small">O Gov.br identificou acessos suspeistos na sua conta, 
+                                                    com base nas informações de acesso. Caso não reconheça algum dos acessos, você pode bloquear imediatamente
+                                                    o acesso, através da opção "Não fui eu". Nós também classificamos cada atividade por nível:<br>
+                                                    <i class="fa fa-circle text-default"></i>&nbsp;Baixa, 
+                                                    <i class="fa fa-circle text-warning"></i>&nbsp;Média e 
+                                                    <i class="fa fa-circle text-danger"></i>&nbsp;Alta. 
+
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-md-12">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>&nbsp;</th>
+                                                            <th>Data/Hora</th>
+                                                            <th>Dispositivo</th>
+                                                            <th>Serviço</th>
+                                                            <th>Descrição</th>                                                    
+                                                            <th>Ação</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="tblAcessosUsuarioSuspeito">
+            
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>                              
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <!--ACESSOS DA CONTA-->
+
+
+
+
+
+
+
+
+                <!--AUTENTICAÇÃO EM DUAS ETAPAS-->
+                <div class="row dvtabs pt-4" id="dvautenticacao2_etapas">
+                        <div class="col-md-12">
+                            <div class="card">                            
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                                <img src="./img/undraw_Security_on_ff2u.svg" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-10">
+                                                <h5 class="card-title">AUTENTICAÇÃO EM 2 ETAPAS</h5>
+                                                <span class="text-muted small">A autenticação em dois fatores é um das formas mais seguras contra qualquer ataque malicioso que
+                                                        vise o roubo de senhas, pois, para acessar a plataforma, será solicitada a senha normal já
+                                                        cadastrada e outra gerada de forma aleatória através de um aplicativo instalado no seu celular
+                                                        pessoal.
+                                                </span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row pt-3"> <!--inicio da div que mostra a autenticação em duas etapas-->
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-6 col-xl-4 p-1">
+                                                    <div class="card h-100">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">1º Passo - Instalar o Aplicativo</h5>
+                                                            <div class="card-icon">
+                                                                <img src="./img/undraw_app_installation_mbdv.svg" class="img-fluid">
+                                                            </div>
+                                                            <h6 class="text-muted mb-2">No seu smartphone instale o aplicativo Google Authenticator ou outro 
+                                                                que realize autenticação em 2 etapas.</h6>
+                                                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=pt_BR"
+                                                            class="btn btn-outline-primary btn-sm">Google Authenticator</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4 p-1">
+                                                    <div class="card h-100">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">2º Passo - Escanear o QRCode</h5>
+                                                            
+                                                            <div id="local-qr-code" class="local-atividades d-flex justify-content-center">
+                                                                
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4 p-1">
+                                                    <div class="card h-100">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">3° PASSO - Vincular à sua conta Gov.br</h5>
+                                                            <div class="card-icon">
+                                                                <img src="./img/undraw_in_sync_xwsa.svg">
+                                                            </div>
+                                                            <h6 class="mb-2 text-muted">
+                                                                    Se você conseguiu realizar os dois passos anteriores, basta clicar no
+                                                                    botão "Vincular".</h6>                                                
+                                                            <div class="cover-richtext-tile tile-content">
+                                                                <p><a style="" target="_blank" title=""
+                                                                        href="http://www.portalpadrao.gov.br/noticias/conheca-o-novo-portal-padrao-do-governo-federal"
+                                                                        data-mce-href="resolveuid/2160ce5e19d14b3384ec5cd2ed3484ad"
+                                                                        class="btn btn-outline-primary btn-sm">Vincular</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div> <!--fim da div que mostra a autenticação em duas etapas-->                              
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <!--AUTENTICAÇÃO EM DUAS ETAPAS-->
+
+
             </div>
 
             <!--SELOS-->
@@ -250,7 +443,8 @@
 <!--JAVASCRIPT-->
 
 <!--jQuery JS-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="./lib/jquery/jquery.js"></script>
+<script src="./lib/jquery/jquery.ui.js"></script>
 
 <!--Popper JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -260,5 +454,25 @@
 
 <!--Barra Brasil JS-->
 <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js"></script>
+
+
+<script src="./js/funcoes.js"></script>
+<script src="./js/promise.js"></script>
+<script src="./js/fetch.js"></script>
+<script src="./js/app.js"></script>
+        
+<script src="./js/plataform_.js"></script>        
+<!-- <script src="./js/funcoes.js"></script> -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        getInfoUsuarioJson();
+        getTabelaAcessos();
+        getTabelaAcessosSuspeitos(15);
+        getUltimosAcessosJson(3);
+        getAcessosSuspeitosJson(3);
+        getImagemQrCode2Fatores(15);
+    });
+</script>
 </body>
 </html>

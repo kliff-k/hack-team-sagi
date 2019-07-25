@@ -220,15 +220,11 @@ class API
                         if(!$this->path[1])
                             $this->endExec(400,['CPF não informado']);
 
-                        $select = "SELECT a.id_notificacao, a.id_acesso_suspeito, a.ds_notificacao, a.dt_notificacao, e.cpf, e.nm_usuario, f.sigla_uf,f.nome_municipio_sem_acento
-                            FROM public.tb_notificacao a
-                            inner join public.tb_acessos_suspeitos b on b.id_acesso_suspeito = a.id_acesso_suspeito
-                            left join public.tb_acesso_gov_br c on c.id_acesso_suspeito = b.id_acesso_suspeito
-                            left join public.tb_acesso_externo d on d.id_acesso_suspeito = b.id_acesso_suspeito
-                            inner join public.tb_usuario e on e.cpf = c.cpf or e.cpf = d.cpf
-                            left join public.tb_geo_ip f on f.remote_address = d.remote_address
-                            where e.cpf = ?
-                            order by id_notificacao DESC LIMIT 10;";
+                        $select = "select a.*, n.ds_notificacao
+                            from tb_acesso_gov_br a 
+                            left join tb_acessos_suspeitos s on (a.cpf=s.cpf and a.data_evento=s.data_evento)
+                            left join tb_notificacao n on (s.id_notificacao=n.id_notificacao)
+                            WHERE a.cpf = ? ORDER BY s.data_evento DESC LIMIT 10;";
 
                         $result = $this->bd->prepare($select);
                         $result->execute([$this->path[1]]);

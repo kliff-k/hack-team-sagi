@@ -1,7 +1,9 @@
 <?php
+header('Access-Control-Allow-Origin: *'); 
+header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
 require_once 'PHPGangsta/GoogleAuthenticator.php';
  $oneCode='';
-$websiteTitle = 'MyWebsite';
+$websiteTitle = 'hs2019st';
  
 $ga = new PHPGangsta_GoogleAuthenticator();
  

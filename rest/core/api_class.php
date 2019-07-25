@@ -220,7 +220,7 @@ class API
                         if(!$this->path[1])
                             $this->endExec(400,['CPF não informado']);
 
-                        $select = "select a.*, n.ds_notificacao
+                        $select = "select a.*, n.id_notificacao ,n.ds_notificacao
                             from tb_acesso_gov_br a 
                             left join tb_acessos_suspeitos s on (a.cpf=s.cpf and a.data_evento=s.data_evento)
                             left join tb_notificacao n on (s.id_notificacao=n.id_notificacao)

@@ -1,1451 +1,478 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <title>Gov.br</title>
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="Gov.br">        
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="./img/ms-icon-144x144.png">
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Gov.br</title>
 
-        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Gov.br">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/ms-icon-144x144.png">
 
-        <!-- Bootstrap CSS -->
-        
-        
-        <!-- <link rel="stylesheet" href="./css/s.css"> -->
-        <link rel="stylesheet" href="./css/s2.css">
-        <link rel="stylesheet" href="./css/base-cachekey-5518dbd75b60103b24fe944c82b18e07.css">
-        <link rel="stylesheet" href="./css/reset-cachekey-05f19b4e1825b7332a35448aee289ac6.css">
-        <link rel="stylesheet" href="./css/brasilgovagenda-b80d378.css">
-        
-        <link rel="stylesheet" href="./css/brasilgovportal-f357bf7.css">
-        <link rel="stylesheet" href="./css/brasilgovtiles-fadba58.css">
-        <link rel="stylesheet" href="./css/estilos.css">        
-        <link rel="stylesheet" href="./lib/fontawesome-free-5.9.0-web/css/all.min.css">        
-        <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">  
-        
-        <meta name="msapplication-config" content="./css/browserconfig.xml" />
-        <meta name="theme-color" content="#333" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> 
 
-        <link href="./css/brasilgovtemas-7dd46b8.css" rel="stylesheet" />  
-        
-
-        <link rel="shortcut icon" href="./img/favicon.ico" />
-        <link rel="manifest" href="./manifest.json"/>
+    <meta name="msapplication-config" content="./css/browserconfig.xml" />
+    <meta name="theme-color" content="#333" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="manifest" href="./manifest.json"/>
 
 
-        <script type="text/javascript" src="./js/resourceplone.js"></script>
-        <script type="text/javascript" src="./js/resourceplone_002.js"></script>
-        <script type="text/javascript" src="./js/resourcecollective_002.js"></script>
-        <script type="text/javascript" src="./js/resourcecollective.js"></script>
-        <script type="text/javascript" src="./js/resourcebrasil.js"></script>
-        <script type="text/javascript" src="./js/resourcedropdown-menu-cachekey-2d3389bd132aab1c7d7a8b068eb670.js"></script>    
-        <!-- <script defer="defer" src="./js/brasilgovagenda-b80d378.js"></script> -->
-        <script defer="defer" src="./js/brasilgovportal-f357bf7.js"></script>
-        <script defer="defer" src="./js/brasilgovtiles-fadba58.js"></script>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="./css/estilos.css">
 
-        
-        
-        
-        
-        
-        
-        
-    </head>
-    <body class="default-header-template cover-layout-layout-vazio template-view portaltype-collective-cover-content site-IDG section-pagina-inicial userrole-anonymous" dir="ltr" data-portal-url="http://www.portalpadrao.gov.br" data-base-url="http://www.portalpadrao.gov.br/mapadosite">
-        <div id="barra-identidade">
-            <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
-                <ul id="menu-barra-temp" style="list-style:none;">
-                  <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
-                      <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
-                  </li>
-                  <li>
-                     <a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a>
-                  </li>
-                </ul>
-              </div>
-        </div>
-        <ul id="skip-menu">
-            <li><a accesskey="1" href="#content">Ir para o conteúdo</a></li>
-            <li><a accesskey="2" href="#main-navigation">Ir para o menu</a></li>
-            <li><a accesskey="3" href="#portal-searchbox">Ir para a busca</a></li>
-            <li><a accesskey="4" href="#portal-footer">Ir para o rodapé</a></li>
+    <!--Font Awesome-->
+    <script defer src="lib/fontawesome-free-5.9.0-web/js/all.js"></script>
+</head>
+<body>
+<!--Barra Brasil-->
+<div id="barra-identidade" >
+    <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+        <ul id="menu-barra-temp" style="list-style:none;">
+            <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+                <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+            </li>
+            <li>
+                <a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a>
+            </li>
         </ul>
-        <!-- User -->
-        <!-- Header -->
-        <header id="main-header" class="inverter">
-            <div class="header-wrapper">
-                    <img src="./img/background4.jpg" width="1150" height="543" class="left img_fundo" alt="">
-                <div id="logo">
-                    <a id="portal-logo" title="O Portal Padrão do governo Federal. " href="index.html">
-    
-                        <div id="portal-title" class="corto">HACKATHON - 51Gi! T5A3</div>
-                        <span id="portal-description">Gov.br Informações da Conta</span>
-                    </a>
-                </div>
-    
-                <div class="header-accessibility">
-                    <ul>
-    
-                        <li id="siteaction-contraste">
-                            <a href="#" accesskey="6">Alto Contraste</a>
-                        </li>
-                        <li id="siteaction-vlibras">
-                            <a href="http://www.vlibras.gov.br/" accesskey="">VLibras</a>
-                        </li>
-                    </ul>
-    
-                </div>
-    
-            </div>
-            <!-- Segunda linha do header -->
-            <div class="search-wrapper">
-                <!-- icones -->
-                <div class="header-icons">
-                    <a class="ico-navegacao">Navegação</a>
-                </div>
-                <div class="links-destaque">
-                    <ul id="portal-services">
-    
-                        <li id="portal-services-link-2-1532035932">
-                            <a href="http://www.portalpadrao.gov.br/noticias/ultimas-noticias" title="Link 2 do topo do portal">Notícias</a>
-                        </li>
-    
-                        <li id="portal-services-manuais-1536932235">
-                            <a href="http://www.portalpadrao.gov.br/manuais" title="">Manuais</a>
-                        </li>
-    
-                        <li id="portal-services-assunto-1-1535397361">
-                            <a href="http://www.portalpadrao.gov.br/assuntos/assunto-1" title="Link obrigatório para o topo do site">Assunto 1</a>
-                        </li>
-    
-                        <li id="portal-services-assunto-2-1535397378">
-                            <a href="http://www.portalpadrao.gov.br/assuntos/assunto-2" title="Link obrigatório para o topo do site">Assunto 2</a>
-                        </li>
-    
-                    </ul>
-                </div>
-    
-                <!-- Search -->
-                <div id="portal-searchbox">
-    
-                    <form id="nolivesearchGadget_form" action="http://www.portalpadrao.gov.br/@@busca">
-    
-                        <fieldset class="LSBox">
-                            <legend class="hiddenStructure">Buscar no portal</legend>
-                            <label class="hiddenStructure" for="nolivesearchGadget">Buscar no portal</label>
-    
-                            <input name="SearchableText" type="text" size="18" title="Buscar no portal" placeholder="Buscar no portal" class="searchField" id="nolivesearchGadget">
-    
-                            <input class="searchButton" type="submit" value="Buscar no portal">
-    
-                        </fieldset>
-    
-                    </form>
-    
+    </div>
+</div>
+<!--END Barra Brasil-->
+
+<header class="navbar navbar-expand sticky-top navbar-dark">
+    <a class="navbar-brand" href="#"><img src="./img/logo-govbr-old-white.png" alt="gov.br"></a>
+    <ul class="navbar-nav flex-row ml-auto d-flex">
+        <li class="nav-item dropdown">
+            <a class="nav-item nav-link mr-md-2" id="bd-versions" data-toggle="dropdown">
+                 <span class="fa-layers fa-fw fa-2x">
+                    <i class="fas fa-bell"></i>
+                    <span class="fa-layers-counter bg-danger" style="font-size: 1.5em;">3</span>
+                </span>
+            </a>
+            <div id="messagens-menu" class="dropdown-menu dropdown-menu-right bg-lights py-0" aria-labelledby="bd-versions">
+                <h6 class="card-header text-center pb-3">Messagens</h6>
+                <ul id="mensagens" class="list-group list-group-flush">
+                    <button type="button" class="list-group-item list-group-item-action">Alerta de segurança!</button>
+                    <button type="button" class="list-group-item list-group-item-action">Bem vindo ao sistema gov.br</button>
+                </ul>
+                <div class="text-center">
+                    <button class="btn btn-link">Ver mais</button>
                 </div>
             </div>
-
-
-
-
-
-
-
-            <!-- Main Menu -->
-            <div class="navigation-wrapper">
-    
-                <div class="navigation-content">
-    
-                    <nav id="main-navigation" class="navigation-cell">
-                        <ul class="list-navigation">
-                            <li id="portaltab-estilos-de-capa" class="plain"><a href="http://www.portalpadrao.gov.br/estilos-de-capa" title="" class="plain">Estilos de capa</a>
-                                <ul class="submenu">
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-1" title="" class="state-published">
-    
-                Capa 1
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-2" title="" class="state-published">
-    
-                Capa 2
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-3" title="" class="state-published">
-    
-                Capa 3
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-4" title="" class="state-published">
-    
-                Capa 4
-            </a>
-    
-                                    </li>
-                                </ul>
-                            </li>
-                            <li id="portaltab-assuntos" class="plain"><a href="http://www.portalpadrao.gov.br/assuntos" title="" class="plain">Assuntos</a>
-                                <ul class="submenu">
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-1" title="" class="state-published">
-    
-                Assunto 1
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-2" title="" class="state-published">
-    
-                Assunto 2
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-3" title="" class="state-published">
-    
-                Assunto 3
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/assuntos/assunto-4" title="" class="state-published">
-    
-                Assunto 4
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/assuntos/estilos" title="" class="state-published">
-    
-                Estilos
-            </a>
-    
-                                    </li>
-                                </ul>
-                            </li>
-                            <li id="portaltab-informacao-ao-cidadao" class="plain"><a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao" title="" class="plain">Informação ao Cidadão</a>
-                                <ul class="submenu">
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/institucional" title="" class="state-published">
-    
-                Institucional
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/licitacoes-e-contratos" title="" class="state-published">
-    
-                Licitações e Contratos
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/participacao-social" title="" class="state-published">
-    
-                Participação Social
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/programas-e-acoes" title="" class="state-published">
-    
-                Programas e Ações
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/receitas-e-despesas" title="" class="state-published">
-    
-                Receitas e Despesas
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/auditorias" title="" class="state-published">
-    
-                Auditorias
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/convenios-e-transferencias" title="" class="state-published">
-    
-                Convênios e Transferências
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/informacoes-classificadas" title="" class="state-published">
-    
-                Informações Classificadas
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/servico-de-informacao-ao-cidadao-sic" title="" class="state-published">
-    
-                Serviço de Informação ao Cidadão (SIC)
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/dados-abertos" title="" class="state-published">
-    
-                Dados Abertos
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/sistemas" title="" class="state-published">
-    
-                Sistemas
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/biblioteca" title="" class="state-published">
-    
-                Biblioteca
-            </a>
-    
-                                    </li>
-                                </ul>
-                            </li>
-                            <li id="portaltab-centrais-de-conteudo" class="plain"><a href="http://www.portalpadrao.gov.br/centrais-de-conteudo" title="" class="plain">Centrais de Conteúdo</a>
-                                <ul class="submenu">
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/centrais-de-conteudo/imagens-1" title="" class="state-published">
-    
-                Imagens
-            </a>
-    
-                                    </li>
-                                </ul>
-                            </li>
-                            <li id="portaltab-contato" class="plain"><a href="http://www.portalpadrao.gov.br/contato" title="" class="plain">Contato</a>
-                                <ul class="submenu">
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/contato/fale-conosco" title="" class="state-published">
-    
-                Fale Conosco
-            </a>
-    
-                                    </li>
-                                </ul>
-                            </li>
-                            <li id="portaltab-manuais" class="plain"><a href="http://www.portalpadrao.gov.br/manuais" title="" class="plain">Manuais</a>
-                                <ul class="submenu">
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/manuais/diretrizes" title="" class="state-published">
-    
-                Diretrizes
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/manuais/guia-de-estilo" title="" class="state-published">
-    
-                Guia de Estilo
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/manuais/gestao-de-conteudo" title="" class="state-published">
-    
-                Gestão de Conteúdo
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/manuais/barra-de-identidade-visual" title="" class="state-published">
-    
-                Barra de Identidade Visual
-            </a>
-    
-                                    </li>
-    
-                                    <li>
-    
-                                        <a href="http://www.portalpadrao.gov.br/manuais/manual-de-uso-de-redes-sociais" title="" class="state-published">
-    
-                Manual de Uso de Redes Sociais
-            </a>
-    
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="navigation-redes navigation-cell">
-                            <h3>Redes sociais</h3>
-                            <ul class="portal-redes">
-    
-                                <li class="portalredes-twitter portalredes-item">
-                                    <a href="https://www.twitter.com/twitter">Twitter</a>
-                                </li>
-    
-                                <li class="portalredes-youtube portalredes-item">
-                                    <a href="https://www.youtube.com/youtube">YouTube</a>
-                                </li>
-    
-                                <li class="portalredes-facebook portalredes-item">
-                                    <a href="https://www.facebook.com/facebook">Facebook</a>
-                                </li>
-    
-                                <li class="portalredes-flickr portalredes-item">
-                                    <a href="https://www.flickr.com/flickr">Flickr</a>
-                                </li>
-    
-                            </ul>
-                        </div>
-                    </nav>
-    
-                </div>
-            </div>
-        </header>
-        <div id="portal-breadcrumbs" class="inverter">
-            <span id="breadcrumbs-you-are-here">Você está aqui:</span>
-            <span id="breadcrumbs-home">
-            <a href="http://www.portalpadrao.gov.br">Página Inicial</a>    
-        </span>
-    
+        </li>
+    </ul>
+</header>
+<main>
+<div class="row m-0">
+    <div class="col-md-3 pl-0">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+            <a class="nav-link active" data-toggle="tab" href="#tab-inicio" role="tab"  id="btn-inicio">Início</a>
+            <a class="nav-link" data-toggle="tab" href="#tab-dados-cadastrais" role="tab"  id="btn-dados-cadastrais">Dados Cadastrais</a>
+            <a class="nav-link" data-toggle="tab" href="#tab-seguranca" role="tab" id="btn-seguranca">Segurança da conta</a>
+            <a class="nav-link" data-toggle="tab" href="#tab-selos" role="tab"  id="btn-selos">Selos de confiabilidade</a>
+            <a class="nav-link" data-toggle="tab" href="#tab-autorizacoes" role="tab" id="btn-autorizacoes">Autorizações</a>
         </div>
-        <div id="wrapper">
-    
-            <!-- Columns -->
-    
-            <div id="main">
-    
-                <main id="main-content" role="main">
-    
-                    
-    
-                    <div class="">
-    
+    </div>
+    <div class="col">
+        <div class="tab-content">
+            <!--INICIO-->
+            <div class="tab-pane fade show active" id="tab-inicio" role="tabpanel">
+                <div id="boas-vindas" class="my-3">
+                    <div class="text-center">
+                        <i class="fa fa-user-circle fa-5x m-1" style="color: #333"></i>
+                        <h4 class="mb-3">Bem vindo, <span id="lblNomeDoUsuario">Nome Usuário X</span></h4>
+                        <h6 id="nome-usuario" class="text-muted">Nesse espaço você pode gerenciar informações aoo acesso na sua conta do Gov.br</h6>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4 p-1">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">ACESSOS SUSPEITOS</h5>
+                                    <div class="card-icon">
+                                        <img src="./img/undraw_secure_server_s9u8.svg">
+                                    </div>
+                                    <h6 class="text-muted mb-2">O Gov.br identificou acessos suspeitos em sua conta:</h6>
+                                    <div id="local-atividades-suspeitas"  class="local-atividades">
+                                        
+                                    </div>
+                                    <div class="d-flex justify-content-center pt-3">
+                                        <button class="btn btn-outline-primary"  onclick="goTabItem('btn-seguranca','dvacessos_suspeitos')">VEJA AS ATIVIDADES</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-4 p-1">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">VERIFICAÇÃO DE ACESSO</h5>
+                                    <div class="card-icon">
+                                        <img src="./img/undraw_personal_settings_kihd.png">
+                                    </div>
+                                    <h6 class="text-muted mb-2">Veja as últimas atividades de acesso da sua conta:</h6>
+                                    <div id="local-atividades" class="local-atividades">
+                                        
+                                    </div>
+                                    <div class="d-flex justify-content-center pt-3">
+                                        <button class="btn btn-outline-primary" onclick="goTabItem('btn-seguranca','dvacessos')">VEJA MAIS DETALHES</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
-
-
-
-
-
-
-
-
-
-
-    
-                        <div id="content">
-    
-                            <div class="row">
-                                <div class="col-md-12" style="local-usuario"> 
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div  style="text-align: center !important; width: 100%">
-                                                <i class="fa fa-user-circle fa-5x" style="color: #333"></i>
-                                            </div>
-                                        </div>  
-                                        <div class="col-md-12">
-                                            <div  style="text-align: center !important; width: 100%">
-                                                <span class="lblNomeDoUsuarioTitulo">Bem vindo, <span id="lblNomeDoUsuario">Nome Usuário X</span></span>
-                                            </div>
-                                        </div>  
-                                        <div class="lblInfoInicialUsuario col-md-12">
-                                                <div  style="text-align: center !important; width: 100%">
-                                                    Nesse espaço você pode gerenciar informações aoo acesso na sua conta do Gov.br
-                                                </div>
-                                        </div>  
-                                    </div>                                 
+                        <div class="col-md-6 col-xl-4 p-1">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">PROTEJA SUA CONTA</h5>
+                                    <div class="card-icon">
+                                        <img src="./img/undraw_Security_on_ff2u.svg">
+                                    </div>
+                                    <h6 class="card-subtitle text-muted mb-2">Você pode aumentar a segurança do acesso da sua conta ativando a autenticação em 2 fatores</h6>
+                                    <div class="d-flex justify-content-center pt-3">
+                                        <button class="btn btn-outline-primary" onclick="goTabItem('btn-seguranca','dvautenticacao2_etapas')">SAIBA MAIS</button>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="row" style="justify-content: center">
-                                <div class="col-md-4" style="">
-                                        <div class="card" style="">
-                                            <div class="card-body">
-                                                    <h5 class="card-title">VERIFICAÇÃO DE ACESSO</h5>
-                                                    <img src="./img/undraw_personal_settings_kihd.png" class="card-icon">
-                                                
-                                                <h6 class="card-subtitle mb-2">Veja as últimas atividades de acesso da sua conta:</h6>
-                                                <p class="card-text text-muted">
-                                                    20/12/2012, Brasília, Firefox
-                                                    <br>
-                                                    18/12/2012, Ceará, Opera
-                                                    <br>
-                                                    17/12/2012, Ceará, Chrome
-
-                                                </p>
-                                                <a href="#" class="card-link">Ver mais</a>
-                                            </div>
-                                        </div>
-                                </div>
-
-                                <div class="col-md-4" style="">
-                                        <div class="card" style="">
-                                            <div class="card-body">
-                                                    <h5 class="card-title">ACESSOS SUSPEITOS</h5>
-                                                    <div style="display: flex; justify-content: center">
-                                                        <img src="./img/undraw_secure_server_s9u8.svg" class="card-icon">
-                                                    </div>
-                                                <h6 class="card-subtitle mb-2">O Gov.br identificou acessos suspeitos em sua conta.:</h6>
-                                                <p class="card-text text-muted">
-                                                    20/12/2012, Brasília, Firefox
-                                                    <br>
-                                                    18/12/2012, Ceará, Opera
-                                                    <br>
-                                                    17/12/2012, Ceará, Chrome
-
-                                                </p>
-                                                <a href="#" class="card-link">Acesse as atividades</a>
-                                            </div>
-                                        </div>
-                                </div>
-
-                                <div class="col-md-4" style="">
-                                        <div class="card" style="">
-                                            <div class="card-body">
-                                                    <h5 class="card-title">PROTEJA SUA CONTA</h5>
-                                                    <div style="display: flex; justify-content: center">
-                                                        <img src="./img/undraw_Security_on_ff2u.svg"  class="card-icon">
-                                                    </div>
-                                                <h6 class="card-subtitle mb-2">O Gov.br identificou acessos suspeitos em sua conta.:</h6>
-                                                <p class="card-text text-muted">
-                                                    20/12/2012, Brasília, Firefox
-                                                    <br>
-                                                    18/12/2012, Ceará, Opera
-                                                    <br>
-                                                    17/12/2012, Ceará, Chrome
-
-                                                </p>
-                                                <a href="#" class="card-link">Acesse as atividades</a>
-                                            </div>
-                                        </div>
-                                </div>
-
-
-                            </div>
-                            
-
-
-    
-                            <div class="row">
-    
-                                <div class="column col-md-4 " data-panel="">
-    
-                                    <div class="tile box-colorido" id="d1d7d361-2e9b-4308-8fe2-0bb1014582f6">
-    
-                                        <div class="cover-richtext-tile tile-content">
-    
-                                            <h1>Nova<br>Identidade<br>Digital de<br>Governo</h1>
-                                            <p><a style="" target="_blank" title="" href="http://www.portalpadrao.gov.br/noticias/conheca-o-novo-portal-padrao-do-governo-federal" data-mce-href="resolveuid/2160ce5e19d14b3384ec5cd2ed3484ad" class="internal-link">SAIBA MAIS</a></p>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                                <div class="column col-md-4 tile-default " data-panel="">
-    
-                                    <div class="tile foto-sobreposta" id="d5727691-aa33-4188-97ec-c34184c28b31">
-    
-                                        <div class="cover-basic-tile tile-content">
-    
-                                            <a class="imag" href="http://www.portalpadrao.gov.br/manuais/manual-orientador-de-instalacao">
-                                                <img src="./img/8663ed40-e20d-4f22-825d-3a08b375dfc2.png" width="468" height="306" class="left" alt="Manual orientador de instalação">
-                                            </a>
-    
-                                            <h2>
-                <a href="http://www.portalpadrao.gov.br/manuais/manual-orientador-de-instalacao">Manual orientador de instalação</a>
-              </h2>
-    
-                                            <div class="visualClear">
-                                                <!-- -->
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                                <div class="column col-md-4 " data-panel="">
-    
-                                    <div class="tile box-branco" id="b98f60f9-a52f-4e58-81c7-1233dcfb206f">
-    
-                                        <div class="nitf-basic-tile tile-content">
-    
-                                            <p class="tile-subtitle">Acessibilidade</p>
-    
-                                            <h2><a href="http://www.portalpadrao.gov.br/noticias/acesso-a-informacao-e-prioridade-no-novo-portal-padrao">Acesso à Informação é prioridade no novo Portal Padrão</a></h2>
-    
-                                            <div class="visualClear">
-                                                <!-- -->
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-    
-                            <div class="row">
-    
-                                <div class="column col-md-4 " data-panel="">
-    
-                                    <div class="tile foto-sobreposta" id="bfbb8ff5-080c-4665-8afc-eef4c9d02a28">
-    
-                                        <div class="nitf-basic-tile tile-content">
-    
-                                            <a class="imag" href="http://www.portalpadrao.gov.br/noticias/8-dicas-para-planejar-e-criar-uma-capa">
-                                                <img src="./img/e89917a2-1493-441c-8e21-49fe15d48937.png" width="370" height="370" class="left" alt="Oito dicas para planejar e criar uma capa">
-                                            </a>
-    
-                                            <p class="tile-subtitle">Dicas</p>
-    
-                                            <h2><a href="http://www.portalpadrao.gov.br/noticias/8-dicas-para-planejar-e-criar-uma-capa">Oito dicas para planejar e criar uma capa</a></h2>
-    
-                                            <div class="visualClear">
-                                                <!-- -->
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                                <div class="column col-md-4 tile-default " data-panel="">
-    
-                                    <div class="tile foto-sobreposta" id="c2c472a4-9cf2-4696-85ca-b3bcf68033d0">
-    
-                                        <div class="nitf-basic-tile tile-content">
-    
-                                            <a class="imag" href="http://www.portalpadrao.gov.br/noticias/entenda-o-que-e-o-menu-quente-hot-menu" title="Ferramenta permite que cidadão conheça os principais temas do dia e acesse rapidamente tudo sobre eles">
-                                                <img src="./img/b39e4575-c6c3-462d-99db-4faaffbab4b0.png" width="370" height="370" class="left" alt="Entenda o que é o menu quente">
-                                            </a>
-    
-                                            <p class="tile-subtitle">Tendência</p>
-    
-                                            <h2><a href="http://www.portalpadrao.gov.br/noticias/entenda-o-que-e-o-menu-quente-hot-menu">Entenda o que é o menu quente</a></h2>
-    
-                                            <div class="visualClear">
-                                                <!-- -->
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                                <div class="column col-md-4 " data-panel="">
-    
-                                    <div class="tile foto-sobreposta" id="abd16da1-be55-4590-a49d-d74c89722d9e">
-    
-                                        <div class="nitf-basic-tile tile-content">
-    
-                                            <a class="imag" href="http://www.portalpadrao.gov.br/noticias/conheca-os-temas-do-portal-institucional-padrao">
-                                                <img src="./img/727515f8-7c48-49c2-bfb8-ec557be395d0.png" width="468" height="306" class="left" alt="Conheça os temas do Portal Institucional Padrão">
-                                            </a>
-    
-                                            <p class="tile-subtitle">Temas</p>
-    
-                                            <h2><a href="http://www.portalpadrao.gov.br/noticias/conheca-os-temas-do-portal-institucional-padrao">Conheça os temas do Portal Institucional Padrão</a></h2>
-    
-                                            <div class="visualClear">
-                                                <!-- -->
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-    
-                            <div class="row tile-default">
-    
-                                <div class="column col-md-12 " data-panel="">
-    
-                                    <div class="tile tile-default" id="b9411209-e995-40fb-ae33-d6fed66486f2">
-    
-                                        <div class="outstanding-header tile-content">
-    
-                                            <a class="outstanding-link" href="https://gestaoconteudo.presidencia.gov.br/gestao_portalpadrao/noticias/ultimas-noticias">ÚLTIMAS NOTÍCIAS</a>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-    
-                            <div class="row linha-recuada">
-    
-                                <div class="column col-md-12 tile-default " data-panel="">
-    
-                                    <div class="tile tile-default" id="c31e4404-34cf-461a-90e5-73fba0d90779">
-    
-                                        <div class="agenda-tile tile-content has-image" id="agenda-c31e4404-34cf-461a-90e5-73fba0d90779" data-url="http://www.portalpadrao.gov.br/institucional/agenda">
-    
-                                            <img class="agenda-image" sizes="100vw" src="./img/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/ee45aac8-f8d8-4947-a15f-3a9a1f928f43.jpeg" srcset="http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/listing 16w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/icon 32w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/tile 64w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/thumb 128w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/tile_album_thumb 128w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/mini 200w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/galeria_de_album_thumb 238w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/Imagem-3C 273w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/Imagem-4C 370w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/preview 400w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/Imagem-5C 468w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/Imagem-6C 565w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/Imagem-7C 663w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/tile_album_view 750w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/Imagem-8C 760w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/large 768w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/Imagem-Full: 1150w, http://www.portalpadrao.gov.br/pagina-inicial/@@agenda/c31e4404-34cf-461a-90e5-73fba0d90779/@@images/image/galeria_de_foto_view 1150w">
-    
-                                            <div class="agenda-wrapper">
-    
-                                                <h2 class="title">Agenda da Autoridade</h2>
-    
-                                                <div class="monthpicker-stroke-wrapper">
-                                                    <div class="monthpicker-stroke"></div>
-                                                    <div class="monthpicker-wrapper">
-                                                        <div class="monthpicker" data-month="7" data-year="2019">
-                                                            <span class="month">JUL</span>
-                                                            <span class="year">2019</span>
-                                                            <input name="monthpicker" id="dp1563924581861" class="hasDatepicker">
-                                                        </div>
-                                                    </div>
-                                                    <div class="monthpicker-stroke"></div>
-                                                </div>
-    
-                                                <div class="daypicker-wrapper">
-                                                    <ul class="daypicker"></ul>
-                                                </div>
-    
-                                                <div class="collectionevents-wrapper">
-                                                    <div class="collectionevents-title-wrapper">
-                                                        <div class="collectionevents-stroke"></div>
-                                                        <div class="collectionevents-title">Compromissos do dia</div>
-                                                        <div class="collectionevents-stroke"></div>
-                                                    </div>
-                                                    <div class="swiper-container collection-events swiper-container-horizontal">
-                                                        <div class="swiper-wrapper">
-    
-                                                            <div class="swiper-slide no-events swiper-slide-active" style="width: 1060px;">Sem compromissos oficiais.</div>
-                                                        </div>
-                                                        <div class="swiper-button-next swiper-button-black swiper-button-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"></div>
-                                                        <div class="swiper-button-prev swiper-button-black swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
-                                                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span></div>
-                                                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                                                </div>
-    
-                                                <div class="agenda-tile-footer">
-                                                    <a href="http://portalpadrao.gov.br/institucional/agenda">Agenda completa</a>
-                                                </div>
-    
-                                            </div>
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-    
-                            <div class="row">
-    
-                                <div class="column col-md-12 " data-panel="">
-    
-                                    <div class="tile tile-default" id="fab9d0cb-e655-490c-b96a-65635b6b1e14">
-    
-                                        <div class="outstanding-header tile-content">
-    
-                                            <h2 class="outstanding-title">Serviços</h2>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-    
-                            <div class="row">
-    
-                                <div class="column col-md-12 " data-panel="">
-    
-                                    <div class="tile lista-blocos" id="c2d6b087-ab8b-4d5e-9223-8db1f21ee79b">
-    
-                                        <div class="cover-list-tile tile-content sortable-tile">
-    
-                                            <div class="list-item" style="position:relative" data-tile-id="c2d6b087-ab8b-4d5e-9223-8db1f21ee79b" data-content-type="Link" data-content-uuid="9bea5457210140ab9e1562f352a6b8fc">
-    
-                                                <h2><a href="http://www.portalpadrao.gov.br/servicos/saque-pis-pasep">Saque PIS/Pasep</a></h2>
-    
-                                                <p></p>
-    
-                                                <div class="visualClear">
-                                                    <!-- -->
-                                                </div>
-                                            </div>
-    
-                                            <div class="list-item" style="position:relative" data-tile-id="c2d6b087-ab8b-4d5e-9223-8db1f21ee79b" data-content-type="Link" data-content-uuid="5d5a3e9683aa413a9eb61932a7801250">
-    
-                                                <h2><a href="http://www.portalpadrao.gov.br/servicos/vagas-de-emprego-sine">Vagas de Emprego SINE</a></h2>
-    
-                                                <p></p>
-    
-                                                <div class="visualClear">
-                                                    <!-- -->
-                                                </div>
-                                            </div>
-    
-                                            <div class="list-item" style="position:relative" data-tile-id="c2d6b087-ab8b-4d5e-9223-8db1f21ee79b" data-content-type="Link" data-content-uuid="56977e9ef80e48df98e32d9c9efda75e">
-    
-                                                <h2><a href="http://www.portalpadrao.gov.br/servicos/bolsa-do-prouni">Bolsa do ProUni</a></h2>
-    
-                                                <p></p>
-    
-                                                <div class="visualClear">
-                                                    <!-- -->
-                                                </div>
-                                            </div>
-    
-                                            <div class="list-item" style="position:relative" data-tile-id="c2d6b087-ab8b-4d5e-9223-8db1f21ee79b" data-content-type="Link" data-content-uuid="58c74e61be41440f805087fb0b03237b">
-    
-                                                <h2><a href="http://www.portalpadrao.gov.br/servicos/solicitar-passaporte">Solicitar Passaporte</a></h2>
-    
-                                                <p></p>
-    
-                                                <div class="visualClear">
-                                                    <!-- -->
-                                                </div>
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-    
-                            <div class="row">
-    
-                                <div class="column col-md-12 " data-panel="">
-    
-                                    <div class="tile tile-default" id="eac540ed-a046-4205-8647-df43f7fc06b0">
-    
-                                        <div class="brasil-groupcarousel-tile tile-content" id="carousel-eac540ed-a046-4205-8647-df43f7fc06b0">
-                                            <div class="tile-header">
-                                                <h2>Participação Social</h2>
-                                                <p></p>
-                                            </div>
-                                            <div class="switch-carousel"></div>
-                                            <div class="swiper-container carousel-thumbs swiper-container-horizontal">
-                                                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-    
-                                                    <div class="swiper-slide swiper-slide-active" style="width: 1060px;">
-    
-                                                        <div class="carousel-item" data-tile-id="eac540ed-a046-4205-8647-df43f7fc06b0" data-content-type="Image" data-content-uuid="25831d823beb4890aa24896efc660297">
-    
-                                                            <a href="http://dados.gov.br/">
-                                                                <img src="./img/c343baeb-4003-495a-8bbc-afb4e49858b3.png" width="61" height="43" class="left" alt="Dados Abertos">
-                                                            </a>
-    
-                                                            <h2>
-                        <a href="http://dados.gov.br/">Dados Abertos</a>
-                      </h2>
-                                                            <p></p>
-                                                        </div>
-    
-                                                        <div class="carousel-item" data-tile-id="eac540ed-a046-4205-8647-df43f7fc06b0" data-content-type="Image" data-content-uuid="b06f71dfb39b45768c621b2b03055962">
-    
-                                                            <a href="http://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?ReturnUrl=%2f">
-                                                                <img src="./img/a8883238-699e-47d0-b2db-0a20b5d5a7ea.png" width="92" height="52" class="left" alt="Ouvidoria">
-                                                            </a>
-    
-                                                            <h2>
-                        <a href="http://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?ReturnUrl=%2f">Ouvidoria</a>
-                      </h2>
-                                                            <p></p>
-                                                        </div>
-    
-                                                        <div class="carousel-item" data-tile-id="eac540ed-a046-4205-8647-df43f7fc06b0" data-content-type="Image" data-content-uuid="0daf05e70884459c93803a636ffebb29">
-    
-                                                            <a href="http://www.brasil.gov.br/participacao-social/consultas">
-                                                                <img src="./img/464b5cd6-c57c-4178-aa70-e2a35f43dc56.png" width="59" height="55" class="left" alt="Ícone Consultas Públicas">
-                                                            </a>
-    
-                                                            <h2>
-                        <a href="http://www.brasil.gov.br/participacao-social/consultas">Consultas Públicas</a>
-                      </h2>
-                                                            <p></p>
-                                                        </div>
-    
-                                                        <div class="carousel-item" data-tile-id="eac540ed-a046-4205-8647-df43f7fc06b0" data-content-type="Image" data-content-uuid="3aa2583582914f459b089dd5666b9e80">
-    
-                                                            <a href="http://www.participa.br/">
-                                                                <img src="./img/26d301bb-d4f8-4b14-a572-f645e3afe46f.png" width="59" height="50" class="left" alt="Participa BR">
-                                                            </a>
-    
-                                                            <h2>
-                        <a href="http://www.participa.br/">Participa BR</a>
-                      </h2>
-                                                            <p></p>
-                                                        </div>
-    
-                                                    </div>
-    
-                                                </div>
-                                                <div class="swiper-button-next swiper-button-black swiper-button-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"></div>
-                                                <div class="swiper-button-prev swiper-button-black swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
-                                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span></div>
-                                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-    
-                            <div class="row">
-    
-                                <div class="column col-md-12 " data-panel="">
-    
-                                    <div class="tile tile-default" id="cd28e59e-112e-4185-a472-b2faf0b5473c">
-    
-                                        <div class="outstanding-header tile-content">
-    
-                                            <h2 class="outstanding-title">Dados Abertos</h2>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-    
-                            <div class="row">
-    
-                                <div class="column col-md-4 " data-panel="">
-    
-                                    <div class="tile tile-default" id="df1afe25-ae5e-4eb2-bf04-f0d781297455">
-    
-                                        <div class="cover-richtext-tile tile-content">
-    
-                                            <h2 style="text-align: center;" data-mce-style="text-align: center;">
-                                                <img src="./img/biografia.png" alt="Ícone Biografia" data-mce-src="resolveuid/210d24c52fc04cf9861e654eee542f01" class="image-inline" title="Ícone Biografia"></h2>
-                                            <h2 style="text-align: center;" data-mce-style="text-align: center;"><br>BIOGRAFIA DO MINISTRO</h2>
-                                            <p class=" " style="text-align: center;" data-mce-style="text-align: center;">Conheça a trajetória profissional e política do ministro João Brasil</p>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                    <div class="tile tile-default" id="d07f3e52-08f3-49dd-aab2-cacd7822cfda">
-    
-                                        <div class="outstanding-header tile-content">
-    
-                                            <a class="outstanding-link">Acesse</a>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                                <div class="column col-md-4 " data-panel="">
-    
-                                    <div class="tile tile-default" id="f688b1d7-6154-44a9-bc13-669c8a55ad82">
-    
-                                        <div class="cover-richtext-tile tile-content">
-    
-                                            <h2 style="text-align: center;" data-mce-style="text-align: center;"><img src="./img/agendas.png" alt="Ícone Agenda" data-mce-src="resolveuid/737b699acada4581a2d877d7a493be11" class="image-inline" title="Ícone Agenda"></h2>
-                                            <h2 style="text-align: center;" data-mce-style="text-align: center;"><br>AGENDA DE AUTORIDADES</h2>
-                                            <p class=" " style="text-align: center;" data-mce-style="text-align: center;">Acompanhe os compromissos diários dos gestores do Ministério X</p>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                    <div class="tile tile-default" id="eb8b9777-333b-453b-b662-017b47130671">
-    
-                                        <div class="outstanding-header tile-content">
-    
-                                            <a class="outstanding-link">Acesse</a>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                                <div class="column col-md-4 " data-panel="">
-    
-                                    <div class="tile tile-default" id="dfea6329-e390-4247-ba25-9e21a91be8bb">
-    
-                                        <div class="cover-richtext-tile tile-content">
-    
-                                            <h2 style="text-align: center;" data-mce-style="text-align: center;"><strong><img src="./img/quem-e-quem.png" alt="Quem é Quem" data-mce-src="resolveuid/67a6d777739544ee9fac7353c0330bf3" class="image-inline" title="Quem é Quem"></strong></h2>
-                                            <h2 style="text-align: center;" data-mce-style="text-align: center;"><strong><br></strong>QUEM É QUEM</h2>
-                                            <p style="text-align: center;" data-mce-style="text-align: center;">Saiba quem são os servidores que atuam no Ministério X</p>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                    <div class="tile tile-default" id="a2b51665-7ded-4d28-bfc1-6f1147ae0f08">
-    
-                                        <div class="outstanding-header tile-content">
-    
-                                            <a class="outstanding-link">Acesse</a>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-    
-                            <div class="row">
-    
-                                <div class="column col-md-12 " data-panel="">
-    
-                                    <div class="tile tile-default" id="c80d5917-f279-4a88-bfe1-855edf156ec3">
-    
-                                        <div class="cover-embed-tile tile-content">
-    
-                                            <!-- FIXME -->
-                                            <style>
-                                                #content {
-                                                    position: static;
-                                                }
-                                            </style>
-    
-                                            <div class="visualClear">
-                                                <!-- -->
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-    
                         </div>
-    
                     </div>
-    
-                    <div id="viewlet-below-content">
-                        <div class="voltar-topo">
-                            <a href="#wrapper">Voltar ao topo</a>
-                        </div>
-    
-                        <div class="texto-copyright">
-                            <span omit-tag="">Todo o conteúdo deste site está publicado sob a licença</span> <a rel="license" href="https://creativecommons.org/licenses/by-nd/3.0/deed.pt_BR">Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada</a>.
-                        </div>
-    
-                    </div>
-                </main>
-    
+                </div>
             </div>
-            <div class="conteudo-relacionado"></div>
-    
-            <footer id="portal-footer">
-                <div class="footer-wrapper">
-    
-                    <div class="colunas-rodape">
-                        <div class="coluna-redes">
-                            <h3>Redes sociais</h3>
-                            <ul class="portal-redes">
-    
-                                <li class="portalredes-twitter portalredes-item">
-                                    <a href="https://www.twitter.com/twitter">Twitter</a>
-                                </li>
-    
-                                <li class="portalredes-youtube portalredes-item">
-                                    <a href="https://www.youtube.com/youtube">YouTube</a>
-                                </li>
-    
-                                <li class="portalredes-facebook portalredes-item">
-                                    <a href="https://www.facebook.com/facebook">Facebook</a>
-                                </li>
-    
-                                <li class="portalredes-flickr portalredes-item">
-                                    <a href="https://www.flickr.com/flickr">Flickr</a>
-                                </li>
-    
-                            </ul>
+
+            <!--DADOS CADASTRAIS-->
+            <div class="tab-pane fade" id="tab-dados-cadastrais" role="tabpanel">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-6 p-1">
+                            <div class="card h-100">
+                                <div class="card-header text-center">
+                                    <h5>Dados Pessoais</h5>
+                                </div>
+                                <form id="form-dados-pessoais" action="" novalidate>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="dados-pessoais-cpf">CPF</label>
+                                            <input type="text" readonly id="dados-pessoais-cpf" class="form-control-plaintext font-weight-bold" value="000.000.000-00">
+                                        </div>
+                                        <div class="form-group d-flex">
+                                            <div class="justify-item-start">
+                                                <label for="dados-pessoais-cpf">Foto de Usuário</label>
+                                                <small class="form-text text-muted">Clique na sua foto para alterá-la</small>
+                                            </div>
+                                            <div class="justify-item-end">
+                                                <img src="./img/undraw_secure_server_s9u8.svg" class="ml-2 w-100 h-100" alt="Foto do Usuário">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="dados-pessoais-nome">Nome Completo</label>
+                                            <input type="text" id="dados-pessoais-nome" class="form-control" placeholder="Digite seu nome completo">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="dados-pessoais-email">E-mail&nbsp;<i class="fas fa-check-circle text-success"></i></label>
+                                            <div class="input-group">
+                                                <input type="email" id="dados-pessoais-email" class="form-control" placeholder="Digite seu e-mail">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button">Validar</button>
+                                                </div>
+                                            </div>
+                                            <small class="form-text text-muted">ex: fulano@email.com</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="dados-pessoais-celular">Telefone Celular</label>
+                                            <div class="input-group">
+                                                <input type="tel" id="dados-pessoais-celular" class="form-control" placeholder="Digite o número do seu celular">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button">Validar</button>
+                                                </div>
+                                            </div>
+                                            <small class="form-text text-muted">ex: (XX) X XXXX-XXXX</small>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <button type="submit" class="btn btn-outline-primary">Alterar Dados</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        <div class="coluna-menu">
-                            <ul class="rodape-navigation">
-                                <li id="portaltab-estilos-de-capa" class="plain"><a href="http://www.portalpadrao.gov.br/estilos-de-capa" title="" class="plain">Estilos de capa</a>
-                                    <ul class="submenu">
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-1" title="" class="state-published">
-    
-                Capa 1
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-2" title="" class="state-published">
-    
-                Capa 2
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-3" title="" class="state-published">
-    
-                Capa 3
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/estilos-de-capa/capa-4" title="" class="state-published">
-    
-                Capa 4
-            </a>
-    
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="portaltab-assuntos" class="plain"><a href="http://www.portalpadrao.gov.br/assuntos" title="" class="plain">Assuntos</a>
-                                    <ul class="submenu">
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/assuntos/assunto-1" title="" class="state-published">
-    
-                Assunto 1
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/assuntos/assunto-2" title="" class="state-published">
-    
-                Assunto 2
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/assuntos/assunto-3" title="" class="state-published">
-    
-                Assunto 3
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/assuntos/assunto-4" title="" class="state-published">
-    
-                Assunto 4
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/assuntos/estilos" title="" class="state-published">
-    
-                Estilos
-            </a>
-    
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="portaltab-informacao-ao-cidadao" class="plain"><a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao" title="" class="plain">Informação ao Cidadão</a>
-                                    <ul class="submenu">
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/institucional" title="" class="state-published">
-    
-                Institucional
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/licitacoes-e-contratos" title="" class="state-published">
-    
-                Licitações e Contratos
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/participacao-social" title="" class="state-published">
-    
-                Participação Social
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/programas-e-acoes" title="" class="state-published">
-    
-                Programas e Ações
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/receitas-e-despesas" title="" class="state-published">
-    
-                Receitas e Despesas
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/auditorias" title="" class="state-published">
-    
-                Auditorias
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/convenios-e-transferencias" title="" class="state-published">
-    
-                Convênios e Transferências
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/informacoes-classificadas" title="" class="state-published">
-    
-                Informações Classificadas
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/servico-de-informacao-ao-cidadao-sic" title="" class="state-published">
-    
-                Serviço de Informação ao Cidadão (SIC)
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/dados-abertos" title="" class="state-published">
-    
-                Dados Abertos
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/sistemas" title="" class="state-published">
-    
-                Sistemas
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/informacao-ao-cidadao/biblioteca" title="" class="state-published">
-    
-                Biblioteca
-            </a>
-    
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="portaltab-centrais-de-conteudo" class="plain"><a href="http://www.portalpadrao.gov.br/centrais-de-conteudo" title="" class="plain">Centrais de Conteúdo</a>
-                                    <ul class="submenu">
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/centrais-de-conteudo/imagens-1" title="" class="state-published">
-    
-                Imagens
-            </a>
-    
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="portaltab-contato" class="plain"><a href="http://www.portalpadrao.gov.br/contato" title="" class="plain">Contato</a>
-                                    <ul class="submenu">
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/contato/fale-conosco" title="" class="state-published">
-    
-                Fale Conosco
-            </a>
-    
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="portaltab-manuais" class="plain"><a href="http://www.portalpadrao.gov.br/manuais" title="" class="plain">Manuais</a>
-                                    <ul class="submenu">
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/manuais/diretrizes" title="" class="state-published">
-    
-                Diretrizes
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/manuais/guia-de-estilo" title="" class="state-published">
-    
-                Guia de Estilo
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/manuais/gestao-de-conteudo" title="" class="state-published">
-    
-                Gestão de Conteúdo
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/manuais/barra-de-identidade-visual" title="" class="state-published">
-    
-                Barra de Identidade Visual
-            </a>
-    
-                                        </li>
-    
-                                        <li>
-    
-                                            <a href="http://www.portalpadrao.gov.br/manuais/manual-de-uso-de-redes-sociais" title="" class="state-published">
-    
-                Manual de Uso de Redes Sociais
-            </a>
-    
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <div class="col-md-6 p-1">
+                            <div class="card h-100">
+                                <div class="card-header text-center">
+                                    <h5>Senha de Acesso</h5>
+                                </div>
+                                <form id="form-alterar-senha" action="" novalidate>
+                                    <div class="card-body">
+                                        <input type="hidden" id="alterar-senha-cpf" value="000.000.000-00">
+                                        <div class="form-group">
+                                            <label for="alterar-senha-atual">Senha Atual</label>
+                                            <input type="password" id="alterar-senha-atual" class="form-control" placeholder="Digite sua senha atual">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="alterar-senha-nova">Nova Senha</label>
+                                            <input type="password" id="alterar-senha-nova" class="form-control" placeholder="Digite sua nova senha">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="alterar-senha-confirmacao">Confirme a Nova Senha</label>
+                                            <input type="password" id="alterar-senha-confirmacao" class="form-control" placeholder="Confirme sua nova senha">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <button type="submit" class="btn btn-outline-primary">Alterar Senha</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-    
-                    <div class="clear"></div>
                 </div>
-                <div id="footer-brasil">
-                    <div id="wrapper-footer-brasil">
-                        <a class="logo-acesso-footer" href="http://www.acessoainformacao.gov.br/" alt="Acesso à informação" title="Acesso à informação"></a>
-                        <a class="logo-governo-federal" href="http://www.brasil.gov.br/" alt="Governo Federal" title="Governo Federal"></a>
+            </div>
+
+            <!--SEGURANÇA CONTA-->            
+            <div class="tab-pane fade" id="tab-seguranca" role="tabpanel">
+
+                <!--ACESSOS DA CONTA-->
+                <div class="row dvtabs" id="dvacessos">
+                    <div class="col-md-12">
+                        <div class="card">                            
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                            <img src="./img/undraw_personal_settings_kihd.svg" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-10">
+                                            <h5 class="card-title">ÚLTIMOS ACESSOS</h5>
+                                            <span class="text-muted small">Nessa sessão você encontra os acessos efetuados na sua conta. 
+                                                Caso não tenha sido você utilize o botão "Não fui eu", 
+                                                para inabilitar imediatamente o acesso do dispositivo selecionado.</span>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Data/Hora</th>
+                                                        <th>Local</th>
+                                                        <th>Dispositivo</th>
+                                                        <th>IP</th>
+                                                        <th>Serviço</th>
+                                                        <th>Ação</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tblAcessosUsuario">
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>
+                          </div>
                     </div>
                 </div>
-            </footer>
-    
+                <!--ACESSOS DA CONTA-->
+
+                <!--ACESSOS DA CONTA-->
+                <div class="row dvtabs pt-4" id="dvacessos_suspeitos">
+                        <div class="col-md-12">
+                            <div class="card">                            
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                                <img src="./img/undraw_secure_server_s9u8.svg" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-10">
+                                                <h5 class="card-title">ATIVIDADES SUSPEITAS</h5>
+                                                <span class="text-muted small">O Gov.br identificou acessos suspeistos na sua conta, 
+                                                    com base nas informações de acesso. Caso não reconheça algum dos acessos, você pode bloquear imediatamente
+                                                    o acesso, através da opção "Não fui eu". Nós também classificamos cada atividade por nível:<br>
+                                                    <i class="fa fa-circle text-default"></i>&nbsp;Baixa, 
+                                                    <i class="fa fa-circle text-warning"></i>&nbsp;Média e 
+                                                    <i class="fa fa-circle text-danger"></i>&nbsp;Alta. 
+
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-md-12">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>&nbsp;</th>
+                                                            <th>Data/Hora</th>
+                                                            <th>Dispositivo</th>
+                                                            <th>Serviço</th>
+                                                            <th>Descrição</th>                                                    
+                                                            <th>Ação</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="tblAcessosUsuarioSuspeito">
+            
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>                              
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <!--ACESSOS DA CONTA-->
+
+
+
+
+
+
+
+
+                <!--AUTENTICAÇÃO EM DUAS ETAPAS-->
+                <div class="row dvtabs pt-4" id="dvautenticacao2_etapas">
+                        <div class="col-md-12">
+                            <div class="card">                            
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                                <img src="./img/undraw_Security_on_ff2u.svg" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-10">
+                                                <h5 class="card-title">AUTENTICAÇÃO EM 2 ETAPAS</h5>
+                                                <span class="text-muted small">A autenticação em dois fatores é um das formas mais seguras contra qualquer ataque malicioso que
+                                                        vise o roubo de senhas, pois, para acessar a plataforma, será solicitada a senha normal já
+                                                        cadastrada e outra gerada de forma aleatória através de um aplicativo instalado no seu celular
+                                                        pessoal.
+                                                </span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row pt-3"> <!--inicio da div que mostra a autenticação em duas etapas-->
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-6 col-xl-4 p-1">
+                                                    <div class="card h-100">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">1º Passo - Instalar o Aplicativo</h5>
+                                                            <div class="card-icon">
+                                                                <img src="./img/undraw_app_installation_mbdv.svg" class="img-fluid">
+                                                            </div>
+                                                            <h6 class="text-muted mb-2">No seu smartphone instale o aplicativo Google Authenticator ou outro 
+                                                                que realize autenticação em 2 etapas.</h6>
+                                                            <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=pt_BR"
+                                                            class="btn btn-outline-primary btn-sm">Google Authenticator</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4 p-1">
+                                                    <div class="card h-100">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">2º Passo - Escanear o QRCode</h5>
+                                                            
+                                                            <div id="local-qr-code" class="local-atividades d-flex justify-content-center">
+                                                                
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4 p-1">
+                                                    <div class="card h-100">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">3° PASSO - Vincular à sua conta Gov.br</h5>
+                                                            <div class="card-icon">
+                                                                <img src="./img/undraw_in_sync_xwsa.svg">
+                                                            </div>
+                                                            <h6 class="mb-2 text-muted">
+                                                                    Se você conseguiu realizar os dois passos anteriores, basta clicar no
+                                                                    botão "Vincular".</h6>                                                
+                                                            <div class="cover-richtext-tile tile-content">
+                                                                <p><a style="" target="_blank" title=""
+                                                                        href="http://www.portalpadrao.gov.br/noticias/conheca-o-novo-portal-padrao-do-governo-federal"
+                                                                        data-mce-href="resolveuid/2160ce5e19d14b3384ec5cd2ed3484ad"
+                                                                        class="btn btn-outline-primary btn-sm">Vincular</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div> <!--fim da div que mostra a autenticação em duas etapas-->                              
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <!--AUTENTICAÇÃO EM DUAS ETAPAS-->
+
+
+            </div>
+
+            <!--SELOS-->
+            <div class="tab-pane fade" id="tab-selos" role="tabpanel">
+                Selos
+            </div>
+
+            <!--AUTORIZAÇÕES-->
+            <div class="tab-pane fade" id="tab-autorizacoes" role="tabpanel">
+                Autorizações
+            </div>
         </div>
-    
-        
-        
-        <div id="plone-analytics"></div>
-        <div id="ajax-spinner" style="display: none;"><img src="./img/spinner.gif" alt=""></div>
-        
-        <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+    </div>
+</div>
+</main>
 
 
-        <script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js"></script>
-        <script type="text/javascript" src="./js/brasilgovtemas-7dd46b8.js"></script>
-    </body>
+<!--JAVASCRIPT-->
+
+<!--jQuery JS-->
+<script src="./lib/jquery/jquery.js"></script>
+<script src="./lib/jquery/jquery.ui.js"></script>
+
+<!--Popper JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<!--Bootstrap JS-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--Barra Brasil JS-->
+<script defer="defer" src="//barra.brasil.gov.br/barra_2.0.js"></script>
+
+
+<script src="./js/funcoes.js"></script>
+<script src="./js/promise.js"></script>
+<script src="./js/fetch.js"></script>
+<script src="./js/app.js"></script>
+        
+<script src="./js/plataform_.js"></script>        
+<!-- <script src="./js/funcoes.js"></script> -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        getInfoUsuarioJson();
+        getTabelaAcessos();
+        getTabelaAcessosSuspeitos(15);
+        getUltimosAcessosJson(3);
+        getAcessosSuspeitosJson(3);
+        getImagemQrCode2Fatores(15);
+    });
+</script>
+</body>
 </html>

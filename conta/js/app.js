@@ -1,15 +1,20 @@
 var deferredPrompt;
 
+//var cpfUsuario = 34894692464; //pega o cpf do usuário da session storage
+var cpfUsuario = 34379665966; //pega o cpf do usuário da session storage
+
 if(!window.Promise){
     window.Promise = Promise;
 }
 
-var dominio_relativo='/sagirmps/';
-if(window.location.href.indexOf('localhost')>0){
-    dominio_relativo='/';
+var dominio_relativo='/';
+if(self.location.href.indexOf('localhost')>0){
+    dominio_relativo='/'+'hack-team-sagi/';
+}else{
+    dominio_relativo='/'+'conta/';
 }
-var ambiente_app =dominio_relativo+'bolsafamilia/';
-// console.log('ambiente no app=>',ambiente_app);
+var ambiente_app =dominio_relativo;
+
 
 if(typeof(sessionStorage) == 'undefined')
 {
@@ -23,7 +28,7 @@ if(typeof(sessionStorage) == 'undefined')
 
 if('serviceWorker' in navigator){
     navigator.serviceWorker
-    .register(ambiente_app+'sw-bfnsm.js',{scope: ambiente_app})    
+    .register(ambiente_app+'sw-gov.br.js',{scope: ambiente_app})    
     .then(function(){
         console.log("Service Worker registered.");
     })
@@ -45,7 +50,7 @@ window.addEventListener('beforeinstallprompt',function(event){
 
 var promise = new Promise(function(resolve, reject){
     setTimeout(function(){
-        reject({code: 500, message: 'An error occurred!'});
+        //reject({code: 500, message: 'An error occurred!'});
     },3000);
 });
 
@@ -54,32 +59,32 @@ var promise = new Promise(function(resolve, reject){
 //vamos montar o menu da aplicação
 */
 
-fetch('menu-superior.html')
-.then(function(obj){    
-    return obj.text();
+// fetch('menu-superior.html')
+// .then(function(obj){    
+//     return obj.text();
     
-})
-.then(function(txt){    
-    $('#menu-barra-superior').html(txt);            
-    $('.sidebarCollapse').on('click',function(){
-        $('#sidebar').toggleClass('active');
-    });
+// })
+// .then(function(txt){    
+//     $('#menu-barra-superior').html(txt);            
+//     $('.sidebarCollapse').on('click',function(){
+//         $('#sidebar').toggleClass('active');
+//     });
 
-    // $('.navbar,.body-container').on('click',function(){
-    //     $('#sidebarCollapse').click();
-    // });
-});
+//     // $('.navbar,.body-container').on('click',function(){
+//     //     $('#sidebarCollapse').click();
+//     // });
+// });
 
-fetch('menu.html')
-.then(function(obj){    
-    return obj.text();
-})
-.then(function(txt){    
-    $('#sidebar').html(txt);                
-    $('[data-toggle="tooltip"]').tooltip({
-        trigger: "hover",
-    })
-});
+// fetch('menu.html')
+// .then(function(obj){    
+//     return obj.text();
+// })
+// .then(function(txt){    
+//     $('#sidebar').html(txt);                
+//     $('[data-toggle="tooltip"]').tooltip({
+//         trigger: "hover",
+//     })
+// });
 
 
 function displayConfirmNotification(){
@@ -88,17 +93,17 @@ function displayConfirmNotification(){
         .then(function(swreg){
             var options={
                 body:'!!!!!',
-                icon:'/bolsafamilia/img/favicon-32x32.png',
+                icon:'/hack-team-sagi/img/favicon-32x32.png',
                 image: '',
                 dir:'ltr',
                 lang:'pt-BR',
                 vibrate:[100,50,200],
-                badge: '/bolsafamilia/img/favicon-32x32.png',
+                badge: '/hack-team-sagi/img/favicon-32x32.png',
                 tag: 'confirm-notification',
                 renotify: true,
                 actions: [
-                    {action: 'confirm', title:'Okay', icon: '/bolsafamilia/img/favicon-32x32.png'},
-                    {action: 'cancel', title:'Canbcel', icon: '/bolsafamilia/img/favicon-32x32.png'}
+                    {action: 'confirm', title:'Okay', icon: '/hack-team-sagi/img/favicon-32x32.png'},
+                    {action: 'cancel', title:'Canbcel', icon: '/hack-team-sagi/img/favicon-32x32.png'}
                 ]
             };
             swreg.showNotification('Successfully subscribed (from SW)!',options);

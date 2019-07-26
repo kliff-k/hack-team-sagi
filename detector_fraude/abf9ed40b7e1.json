@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hackathon-serpro-2019",
+  "private_key_id": "abf9ed40b7e1ae9511fe974df6e597ae4052bc14",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCy7/A2Nbu7vrWV\neGGW4OtEK5I3n+82gr2NkyvBg7vNz6u/WA2cn7Y/b+5Sm2WwWa9WIDLCsQ9pCJG6\nj+5IBpqcPRpbR/kurfx+Vh+iHSSvte0ZgQIqOweXfG1GRabhDpToQI7+KkZW8Qql\nnXVgL7JWq/S8BL12FGo6m4i6ZjNHU1t4ndWycucv1tSrmQNPuRowm1JkCsgaOhlI\ntKg0DnmZDxME4HAZLQLc4i1vxrMEmZSqlD8NKZTNsY4EECYTEofbWLxMZeg7OT2G\nKzFJzKuCHDWxR0TP++FZnP8b++peACK89LMtgcIeFFrDscyASf1TJEXyq8grYl8c\noonUeXp9AgMBAAECggEAEn3m1GdZqxWSlOuPpETCs3UQQ4TY9whsV+braPB49lQ9\nksTiBTthHW2vEqTiDac7Djq+HC4pokhjLQVGUfWywS40XNYTi44p75Fta/a4jZsO\nsWnKZDxc9LwEW/SDQjNcUqMnU99hDQeUetiKooHTW48iN9MClGMYNk3QA7lfl8F6\nefGf5qVE2e35yGMc92lLhNaHGq+y6viO4H/TjMXPLvKbnhzo2vW05a4BuNpPu+Ml\nEXX/nFXR3HSUL/6wTcBtNHy+LL/gBpIGWKeYbz/WKGQ3mPqgiguQpwJlPL+zKpz4\nFIyPkWfFSXZzPLWM3ZukhA0FOy9cjnNFnhJ3G2TWEQKBgQDj1O5wCqRnQSfP+g+v\nQaSpOcqckIee4IDWkEjg4NC/PP9Mje1Yxckp7eFwQ61GBsWh93vSR0Wv6CXnhIA/\nOSre0A0aC0z3fGxz87zVLqcQBqKhk+VyGcRB0mAo9yorPQZZNLOsEBs8IoyqNlxE\nqwiKrVDCD8DZdEd4mdbTxKtPEQKBgQDJD3RS6BrfLVnIuMw1fAkMMpnxPzLHTU3h\neNh8PnxQhgHJjkeZsqPWFYhdIapoftRWUEmbhtEI4UH07W2gSJlCJBCdXn5L1Rb4\nXBt7ruG0r3FzyiQp3mI7yNqlPvgFU+d1A5hAv9rvgdj8my0osCpgaX+Xfv5ok0wm\nPFYOdXxMrQKBgGNec8CaY6pFWL/1KPIfh1nnwt8WipBZCtiKhb7PTzyZtiAFpweY\n/Gw1PKZiXii0u24xKuhD/bkDX8Tinaz1miUkSRKa6y7mLcdE/49bkbIDstsWTnS9\nmEO9JgO4CcRiEWrG+baKL9bCmueCXiv1DPyvKxH5HPu7I5EOSAyFMtKBAoGBAIH3\nDm9E/5HB4+aepcnw2nxa/S13d6Bi9PPJRM7TKVJ3vRIHeXr9gXAyTQo+Z8PSL/l3\nPo1dESQXT6Y+D33rT730SBUhbqwgGxABofZKLjW4rrJ1OPkjegZBKCxmzrXK7bOy\n1ikMmz30hkmLGR7S+SGHMGXCPjtk83VHzSzdfrKlAoGAE1tEbs2HMyEb352GCPzJ\nhQxZHiLJnD5nexCl8xTHp9U1LKlp+NZEhorSEp7hng03Gqohd3oNt6vKTxLq+3J5\ng1RBHs5OfxJZ0zAP5t6Rbes+1wHXuORVr5rQvolfzNr9oPV4ynOhrtb208mfrNq1\nYKA3vEfZuswiGRBgMrAW/cQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cranr-bigquery@hackathon-serpro-2019.iam.gserviceaccount.com",
+  "client_id": "114022756386432831638",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cranr-bigquery%40hackathon-serpro-2019.iam.gserviceaccount.com"
+}

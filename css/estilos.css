@@ -52,6 +52,10 @@ header{
     }
 }
 
+#sidenav .nav-link{
+    border-radius: 0;
+}
+
 #sidenav-overlay {
     display: none;
     position: fixed;

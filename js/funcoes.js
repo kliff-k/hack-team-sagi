@@ -349,7 +349,8 @@ function initSidenav() {
         $('#sidenav-overlay').removeClass('active');
     };
 
-    $('#dismiss, #sidenav-overlay').on('click', close_callback);
+    $('#sidenav-overlay').on('click', close_callback);
+    $('#sidenav a').on('click', close_callback);
     $(window).resize(close_callback);
 
     $('#sidenav-toggle').on('click', function(){

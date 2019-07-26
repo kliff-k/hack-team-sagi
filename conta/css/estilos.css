@@ -1,97 +1,49 @@
-.btn-circle {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    padding: 6px 0;
-    font-size: 12px;
-    line-height: 1.428571429;
-    border-radius: 15px;
-    background-color: #c6c6c6;
-    color: #333;
-  }
-  .btn-circle.btn-lg {
-    width: 50px;
-    height: 50px;
-    padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.33;
-    border-radius: 25px;
-  }
-  .btn-circle.btn-xl {
-    width: 70px;
-    height: 70px;
-    padding: 10px 16px;
-    font-size: 24px;
-    line-height: 1.33;
-    border-radius: 35px;
-  }
-  
-  .local-usuario{
-      margin-top: 0px !important;
-  }
-
-  .lblNomeDoUsuarioTitulo{
-      font-weight: 400 !important;
-      font-size: 1.8em;
-  }
-
-  .lblNomeDoUsuarioTitulo{
-    word-wrap: break-word;
-    color: #202124;
-    line-height: 2.25rem;
-  }
-
-  .lblInfoInicialUsuario{
-      color: #5f6368;
-      line-height: 1.5rem;
-      letter-spacing: .00625em;
-  }
-
-  #main{
-      margin-top: 0px !important;
-  }
-
-  #wrapper{
-      padding-top: 0px !important;
-  }
-
-
-  .card {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
+body{
 }
 
-.card-body {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
+header{
+    background-image: url('../img/bg-hackathon.jpg');
+    background-position: center 55%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-color: black !important;
 }
 
-.card-title{
-    font-weight: 600;
-    color: #202124;
-    font-size: 1.4em !important;
-    text-align: center;
-}
-
-.card-subtitle{
-    font-weight: 400;
-    color: #5f6368;
+.navbar-brand img{
+    height: 2em;
 }
 
 .card-icon{
-    height: 180px;
+    height: 10em;
+    padding: 1em;
+}
+
+.card-icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#messagens-menu{
+    width: 250px;
+}
+
+#barra-identidade{
+    display: flex;
+}
+
+#barra-brasil{
+    width: 100%;
+}
+
+
+.local-atividades div{
+    width: 100%;    
+    font-size: 0.9em !important;
+}
+
+.dvtabs h5{
+    text-transform: uppercase;
+    
+    font-size: 1.4em;
 }

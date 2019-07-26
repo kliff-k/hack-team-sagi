@@ -3,7 +3,7 @@
 class API
 {
     /**
-     * Objeto da classe banco.php, utilizada em vários métodos da api.
+     * Objeto PDO, utilizada em vários métodos da api.
      * @access protected
      * @var object
      * @name $bd
@@ -107,7 +107,7 @@ class API
      *    auth: chave_do_usuario:assinatura_do_usuario (http header).
      *    date: data_de_requisicao (http header).
      *    data: dados do corpo da requisição (json).
-     * 2. Instanciar a classe Banco (Que gerenciará o acesso e todas a requisições aos BDs da SAGI).
+     * 2. Instanciar o objeto PDO (Que gerenciará o acesso e todas a requisições aos BDs da SAGI).
      * 3. Executar a chamada.
      */
     public function __construct ()

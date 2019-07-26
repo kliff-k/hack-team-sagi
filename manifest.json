@@ -48,8 +48,8 @@
     "scope": ".",
     "orientation": "portrait-primary",
     "description": "Hackathon Serpro Gov.br",
-    "theme_color": "#333",
-    "background_color": "#333",
+    "theme_color": "#222",
+    "background_color": "#222",
     "display": "standalone",
     "dir": "ltr",
     "lang": "pt-BR"

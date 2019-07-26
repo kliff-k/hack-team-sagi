@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Gov.br">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#222">
     <meta name="msapplication-TileImage" content="./img/ms-icon-144x144.png">
 
     <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
@@ -28,7 +28,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> 
 
     <meta name="msapplication-config" content="./css/browserconfig.xml" />
-    <meta name="theme-color" content="#333" />
+    <meta name="theme-color" content="#222" />
     <link rel="shortcut icon" href="./img/favicon.ico" />
     <link rel="manifest" href="./manifest.json"/>
 
@@ -100,7 +100,7 @@
                     <div class="text-center">
                         <i class="fa fa-user-circle fa-5x m-1" style="color: #333"></i>
                         <h4 class="mb-3">Bem vindo, <span id="lblNomeDoUsuario">Nome Usuário X</span></h4>
-                        <h6 id="nome-usuario" class="text-muted">Nesse espaço você pode gerenciar informações aoo acesso na sua conta do Gov.br</h6>
+                        <h6 id="nome-usuario" class="text-muted">Controle suas informações, privacidade e segurança da conta Acesso Gov.br</h6>
                     </div>
                 </div>
                 <div class="container">
@@ -472,6 +472,13 @@
         getUltimosAcessosJson(3);
         getAcessosSuspeitosJson(3);
         getImagemQrCode2Fatores(15);
+
+
+
+
+
+        //abre mensagem de instalação do aplicativo
+        abreMensagemInstalacaoSistema();
     });
 </script>
 </body>

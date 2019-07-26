@@ -47,3 +47,19 @@ header{
     
     font-size: 1.4em;
 }
+
+.btn-icone-hamburguer{
+    display:none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    /* For desktop: */
+    .btn-icone-hamburguer{
+        display: inline;
+    }
+
+    #menu-navegacao{
+        display: none;
+    }
+}

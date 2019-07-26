@@ -1,3 +1,27 @@
+function abreMensagemInstalacaoSistema(){ 
+    setTimeout(function(){
+        if (deferredPrompt) {
+            console.log('instalar aplicação');
+            deferredPrompt.prompt();
+           
+            deferredPrompt.userChoice.then(function(choiceResult) {
+            //   console.log(choiceResult.outcome);    
+              if (choiceResult.outcome === 'dismissed') {
+                //getGeraLogApp('nao-instalou-app');
+                console.log('Usuário recusou a instalação do aplicativo na tela inicial');
+              } else {
+                console.log('Usuário adicionou o aplicativo a sua tela inicial');
+                //getGeraLogApp('instalou-app');
+              }
+            });
+        
+            deferredPrompt = null;
+          }
+    },2000);
+    
+}
+
+
 function goToDiv(dv){
     if(dv=='')
         return false;

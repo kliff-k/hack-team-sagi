@@ -93,17 +93,17 @@ function displayConfirmNotification(){
         .then(function(swreg){
             var options={
                 body:'!!!!!',
-                icon:'/hack-team-sagi/img/favicon-32x32.png',
+                icon:dominio_relativo+'img/favicon-32x32.png',
                 image: '',
                 dir:'ltr',
                 lang:'pt-BR',
                 vibrate:[100,50,200],
-                badge: '/hack-team-sagi/img/favicon-32x32.png',
+                badge: dominio_relativo+'img/favicon-32x32.png',
                 tag: 'confirm-notification',
                 renotify: true,
                 actions: [
-                    {action: 'confirm', title:'Okay', icon: '/hack-team-sagi/img/favicon-32x32.png'},
-                    {action: 'cancel', title:'Canbcel', icon: '/hack-team-sagi/img/favicon-32x32.png'}
+                    {action: 'confirm', title:'Okay', icon: dominio_relativo+'img/favicon-32x32.png'},
+                    {action: 'cancel', title:'Canbcel', icon: dominio_relativo+'img/favicon-32x32.png'}
                 ]
             };
             swreg.showNotification('Successfully subscribed (from SW)!',options);

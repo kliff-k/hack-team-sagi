@@ -1,4 +1,4 @@
-# hack-team-sagi
+# Team SAGI
 Hackathon Serpro 2019
 
 A aplicação criar tem o objetivo de exemplificar como os processos de inteligência artificial, produzidos nos Hackathon Serpro 2019, pode iteragir com os usuários do Gov.br. Essa é uma aplicação que utiliza os conceitos e técnicas da Progressive Web Application (PWA) que pode ser utilizada tornar mais próximo a comunicação do governo com o Cidadão.

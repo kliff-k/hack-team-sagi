@@ -8,6 +8,6 @@ Dentre os recursos codificados e idealizados para o projeto, considerando as pos
 
 2) Notificações: utilizado para exibir webnotifications com informações de acesso indevido (fralde) ou informações gerais;
 
-3) instalação da web-aplicação do device do usuário;
+3) Instalação da web-aplicação do dispositivp do usuário;
 
-4) Informações de Como se proteger atividando autenticação em 2 etapas
+4) Informações de como se proteger atividando autenticação em 2 etapas
